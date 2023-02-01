@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','\App\Http\Controllers\IndexController@index')->name('index');
+Route::get('/{category}','\App\Http\Controllers\IndexController@show')->name('category.show');

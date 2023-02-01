@@ -1,0 +1,108 @@
+.bread_crumbs{
+    background: #F7F7F7;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    display: flex;
+    padding: 2vh 0 2vh 6vw;
+    box-shadow: rgba(0.85,0,0,12) 14px 28px rgba(1,0,0,12);
+}
+.bread_crumbs__item{
+    margin: 0 1vw;
+}
+.product_container{
+    font-family: 'Montserrat';
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 7vh;
+}
+.product_nav{
+    width: 15vw;
+    min-width: 15vw;
+    padding: 0 5vw 0 1vw;
+    white-space: nowrap
+}
+.product_nav a{
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    color: #363636;
+}
+.product_nav img{
+    margin-right: 10px;
+}
+.product{
+    display: flex;
+}
+.product_info{
+    padding-left: 5vw;
+}
+.product_title h1{
+    text-align: start;
+    font-size: 30px;
+}
+.product_about{
+    width: 35vw;
+    padding: 0 0 4vh 0;
+}
+.product_price{
+    color: #363636;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 3vh;
+}
+.button_product{
+    background: #FE201D;
+    text-align: center;
+    width: 15vw;
+    padding: 1vh 0.5vw;
+    color: white;
+    margin-bottom: 7vh;
+}
+.haracteristics p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+}
+  table td, table th {
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    padding: 4px 20px 2px 10px ;
+}
+.product_dignities{
+    padding: 5vh 0;
+}
+.product_dignities li{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.product_dignities p{
+    padding-left: 0.5vw;
+}
+.product_page_h2 h2{
+    text-align: center;
+    line-height: 12vh;
+    background: #F7F7F7;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: #363636;
+   }
+.sub_products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #F7F7F7;
+    padding: 0 5vw;
+}
+.sub_products__item{
+    background: white;
+    margin-bottom: 10vh;
+    margin-left: 2vw;
+}
+.sub_products__item .button{
+    width: 10vw;
+}

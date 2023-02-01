@@ -24,7 +24,7 @@
                     {{$category->price}}
                 </p>
                 <div class="button">
-                    <a href="">Подробнее</a>
+                    <a href="{{route('category.show',$category)}}">Подробнее</a>
                 </div>
             </div>
         </div>

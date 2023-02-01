@@ -104,3 +104,11 @@ h1{
     text-align: center;
 }
 /* end about index page */
+.bread_crumbs{
+    background: red;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    display: flex;
+    padding: 2vh 0 2vh 6vw;
+    box-shadow: rgba(0.85,0,0,12) 14px 28px rgba(1,0,0,12);
+}
