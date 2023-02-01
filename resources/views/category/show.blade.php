@@ -2,7 +2,9 @@
 @section('content')
 <div class="bread_crumbs">
     <div class="bread_crumbs__item">
+        <a href="{{route('index')}}">
         Главная
+        </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
@@ -11,11 +13,11 @@
 </div>
 <div class="product_container">
     <div class="product_nav">
-        @foreach ($categories as $category )
+        @foreach ($categories as $item )
         <li>
-            <a href="">
-            <img src="{{Storage::url($category->icon_black)}}">
-            <p>{{$category->title}}</p>
+            <a href="{{route('category.show',$item)}}">
+            <img src="{{Storage::url($item->icon_black)}}">
+            <p>{{$item->title}}</p>
             </a>
         </li>
         @endforeach

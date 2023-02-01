@@ -3,11 +3,11 @@
 <div class="baner">
     <div class="baner_nav">
         <nav>
-            @foreach ($categories as $category)
+            @foreach ($categories as $item)
             <li>
-                <a href="">
-                <img src="{{Storage::url($category->icon)}}">
-                <p>{{$category->title}}</p>
+                <a href="{{route('category.show',$item)}}">
+                <img src="{{Storage::url($item->icon)}}">
+                <p>{{$item->title}}</p>
                 </a>
             </li>
             @endforeach
