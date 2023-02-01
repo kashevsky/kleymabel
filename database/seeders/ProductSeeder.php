@@ -27,7 +27,6 @@ class ProductSeeder extends Seeder
             'accessories'=>'На ручке/нагревателе',
             'form'=>'',
             'garanty'=>'1 год',
-            'preview_image'=>'',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
         ]);
@@ -55,7 +54,6 @@ class ProductSeeder extends Seeder
             'accessories'=>'На ручке/нагревателе',
             'form'=>'',
             'garanty'=>'1 год',
-            'preview_image'=>'',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
         ]);
