@@ -35,6 +35,8 @@ h1{
     font-family: 'Montserrat';
     padding: 1vh 10vw;
     padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 .catalog__item{
     background-color: white;
@@ -44,6 +46,8 @@ h1{
     width: 20vw;
     padding: 0 1vw 4vh 1vw;
     text-align: center;
+    margin-left: 1vw;
+    margin-top: 1vh;
 }
 .catalog__item h2{
     font-family: 'Montserrat';

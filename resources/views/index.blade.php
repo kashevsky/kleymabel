@@ -15,18 +15,20 @@
 <div class="catalog_section">
     <h1>Изготовление клейм</h1>
     <div class="catalog">
+        @foreach ($categories as $category )
         <div class="catalog__item">
-            <img src="/images/ippc.jpeg.png">
-            <h2>Клейма для поддонов</h2>
+            <img src="{{$category->preview_image}}">
+            <h2>{{$category->title}}</h2>
             <div class="item_flex">
                 <p class="price">
-                    90.0 руб.
+                    {{$category->price}}
                 </p>
                 <div class="button">
                     <a href="">Подробнее</a>
                 </div>
             </div>
         </div>
+        @endforeach
     </div>
 </div>
 <div class="about_section_conainer">
