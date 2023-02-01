@@ -20,7 +20,7 @@
     width: 15vw;
     min-width: 15vw;
     padding: 0 5vw 0 1vw;
-    white-space: nowrap
+    white-space: nowrap;
 }
 .product_nav a{
     display: flex;
@@ -33,6 +33,9 @@
 }
 .product{
     display: flex;
+}
+.slider img{
+    width: 25vw;
 }
 .product_info{
     padding-left: 5vw;

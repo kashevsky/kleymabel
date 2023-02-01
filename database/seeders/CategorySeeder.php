@@ -48,7 +48,10 @@ class CategorySeeder extends Seeder
             'accessories'=>'',
             'form'=>'',
             'garanty'=>'1 год',
-            'slug'=>'kleyma_dlya_poddonov'
+            'slug'=>'kleyma_dlya_poddonov',
+            'short_desc'=>'Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.',
+            'icon'=>'/images/pallet.svg',
+            'icon_black'=>'/images/pallet-black.svg',
         ]);
         Category::create([
             'title'=>'Клейма по дереву',
@@ -70,7 +73,10 @@ class CategorySeeder extends Seeder
             'accessories'=>'',
             'form'=>'По желанию заказчика',
             'garanty'=>'1 год',
-            'slug'=>'kleyma_po_derevu'
+            'slug'=>'kleyma_po_derevu',
+            'short_desc'=>'Металлическое изделие для нанесения отжигов на деревянных изделиях.',
+            'icon'=>'/images/wood.svg',
+            'icon_black'=>'/images/wood-black.svg',
         ]);
     }
 }

@@ -6,68 +6,34 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        Продукт
+        {{$category->title}}
     </div>
 </div>
 <div class="product_container">
     <div class="product_nav">
+        @foreach ($categories as $category )
         <li>
             <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
+            <img src="{{Storage::url($category->icon_black)}}">
+            <p>{{$category->title}}</p>
             </a>
         </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="/images/pallet-black.svg">
-            <p>Клейма для поддонов</p>
-            </a>
-        </li>
+        @endforeach
     </div>
     <div class="product_section">
         <div class="product">
             <div class="slider">
-                <img src="/images/ippc.jpeg.png">
+                <img src="{{$category->preview_image}}">
             </div>
             <div class="product_info">
             <div class="product_title">
-                <h1>Клейма для поддонов</h1>
+                <h1>{{$category->title}}</h1>
             </div>
             <div class="product_about">
                 Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
             </div>
             <div class="product_price">
-                90.00 руб.
+                {{$category->price}} руб.
             </div>
             <div class="button_product">
                 Добавить в корзину

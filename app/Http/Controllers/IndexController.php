@@ -14,6 +14,7 @@ class IndexController extends Controller
     }
     public function show(Category $category)
     {
-        return view('category.show', compact('category'));
+        $categories = Category::get();
+        return view('category.show', compact('category','categories'));
     }
 }

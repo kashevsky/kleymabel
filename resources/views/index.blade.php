@@ -3,12 +3,14 @@
 <div class="baner">
     <div class="baner_nav">
         <nav>
+            @foreach ($categories as $category)
             <li>
                 <a href="">
-                <img src="/images/pallet.svg">
-                <p>Клейма для поддонов</p>
+                <img src="{{Storage::url($category->icon)}}">
+                <p>{{$category->title}}</p>
                 </a>
             </li>
+            @endforeach
         </nav>
     </div>
 </div>
@@ -21,7 +23,7 @@
             <h2>{{$category->title}}</h2>
             <div class="item_flex">
                 <p class="price">
-                    {{$category->price}}
+                    {{$category->price}} руб.
                 </p>
                 <div class="button">
                     <a href="{{route('category.show',$category)}}">Подробнее</a>
