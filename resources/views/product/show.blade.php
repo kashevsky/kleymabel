@@ -8,7 +8,13 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        {{$category->title}}
+        <a href="{{route('category.show',$product->category)}}">
+        {{$product->category->title}}
+        </a>
+    </div>
+    <img src="/images/array.svg">
+    <div class="bread_crumbs__item">
+        {{$product->title}}
     </div>
 </div>
 <div class="product_container">
@@ -25,17 +31,17 @@
     <div class="product_section">
         <div class="product">
             <div class="slider">
-                <img src="{{$category->preview_image}}">
+                <img src="{{$product->preview_image}}">
             </div>
             <div class="product_info">
             <div class="product_title">
-                <h1>{{$category->title}}</h1>
+                <h1>{{$product->title}}</h1>
             </div>
             <div class="product_about">
                 Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
             </div>
             <div class="product_price">
-                {{$category->price}} руб.
+                {{$product->price}} руб.
             </div>
             <div class="button_product">
                 Добавить в корзину
@@ -97,15 +103,15 @@
     <h2>Каталог клейм для поддонов</h2>
 </div>
 <div class="sub_products">
-    @foreach ($category->products as $product )
+    @foreach ($product->subProducts as $subProduct )
     <div class="sub_products__item">
         <img src="{{$product->preview_image}}">
-        <h2>{{$product->title}}</h2>
+        <h2>{{$subProduct->title}}</h2>
         <div class="sub_product__flex">
         <div class="price">
-            {{$product->price}} руб.
+            {{$subProduct->price}} руб.
         </div>
-        <a class="sub_product_button" href="{{route('product.show',$product)}}">
+        <a class="sub_product_button">
             Подробнее
         </a>
         </div>

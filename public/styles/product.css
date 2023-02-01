@@ -100,12 +100,32 @@ table {
     align-items: center;
     background: #F7F7F7;
     padding: 0 5vw;
+    font-family: 'Montserrat';
 }
 .sub_products__item{
     background: white;
     margin-bottom: 10vh;
     margin-left: 2vw;
+    padding-bottom: 2vh;
 }
-.sub_products__item .button{
+.sub_products__item img{
+    width: 20vw;
+}
+.sub_products__item h2{
+    text-align: center;
+}
+.sub_product__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+.sub_product_button{
+    text-align: center;
     width: 10vw;
+    color: white;
+    text-align: center;
+    background-color: #FE201D;
+    padding: 5px 10px;
 }
+
