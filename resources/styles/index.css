@@ -1,0 +1,106 @@
+.baner{
+    background-image: url('../images/imagebaner.png');
+    background-position: center;
+    background-size: cover;    
+    width: 100%;
+    height: 81.5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.baner_nav{
+    padding: 10vh 8vw;
+}
+.baner_nav nav li a{
+    color: #FE201D;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+}
+.baner nav li a img{
+    margin-right: 1vw;
+}
+.catalog_section{
+    background: #F7F7F7;
+}
+h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 64px;
+    color: #363636;
+}
+.catalog{
+    font-family: 'Montserrat';
+    padding: 1vh 10vw;
+    padding-bottom: 10vh;
+}
+.catalog__item{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20vw;
+    padding: 0 1vw 4vh 1vw;
+    text-align: center;
+}
+.catalog__item h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 6%;
+}
+.item_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price{
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 20px;
+}
+.button{
+    background: #FE201D;
+    display: flex;
+    align-items: center;
+}
+.button a{
+    color: white;
+    padding: 10px 30px;
+}
+/* start about index page */
+.about_section_conainer
+{
+    background: #F7F7F7;
+}
+.about_section
+{
+    background: white;
+    width: 60vw;
+    margin: 1px auto;
+    padding: 5vh 10vw;
+    font-family: 'Montserrat';
+}
+.about_title
+{
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
+    color: #363636;
+}
+.about_section__text{
+    padding: 5vh 0 10vh 0;
+    text-align: center;
+}
+.advantages{
+    display: flex;
+    justify-content: space-evenly;
+}
+.advantages__item p{
+    text-align: center;
+}
+/* end about index page */
