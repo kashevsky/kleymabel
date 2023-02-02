@@ -3,11 +3,15 @@
     font-family: 'Montserrat';
     font-size: 15px;
     display: flex;
+    flex-wrap: wrap;
     padding: 2vh 0 2vh 6vw;
     box-shadow: rgba(0.85,0,0,12) 14px 28px rgba(1,0,0,12);
 }
 .bread_crumbs__item{
     margin: 0 1vw;
+}
+.bread_crumbs__item a{
+    color: #363636;
 }
 .product_container{
     font-family: 'Montserrat';
@@ -15,11 +19,12 @@
     display: flex;
     justify-content: center;
     padding-top: 7vh;
+    margin: 0 7vw;
 }
 .product_nav{
     width: 15vw;
     min-width: 15vw;
-    padding: 0 5vw 0 1vw;
+    padding: 0 5vw 0 0;
     white-space: nowrap;
 }
 .product_nav a{
@@ -36,6 +41,7 @@
 }
 .slider img{
     width: 25vw;
+    min-width: 400px;
 }
 .product_info{
     padding-left: 5vw;

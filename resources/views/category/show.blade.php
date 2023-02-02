@@ -8,7 +8,9 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
+        <span style="color: red; font-weight: 400">
         {{$category->title}}
+        </span>
     </div>
 </div>
 <div class="product_container">

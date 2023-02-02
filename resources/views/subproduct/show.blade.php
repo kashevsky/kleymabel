@@ -8,14 +8,20 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('category.show',$product->category)}}">
-        {{$product->category->title}}
+        <a href="{{route('category.show',$subProduct->product->category)}}">
+        {{$subProduct->product->category->title}}
+        </a>
+    </div>
+    <img src="/images/array.svg">
+    <div class="bread_crumbs__item">
+        <a href="{{route('product.show',$subProduct->product)}}">
+        {{$subProduct->product->title}}
         </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
         <span style="color: red; font-weight: 400">
-        {{$product->title}}
+        {{$subProduct->title}}
         </span>
     </div>
 </div>
@@ -33,17 +39,17 @@
     <div class="product_section">
         <div class="product">
             <div class="slider">
-                <img src="{{$product->preview_image}}">
+                <img src="{{$subProduct->preview_image}}">
             </div>
             <div class="product_info">
             <div class="product_title">
-                <h1>{{$product->title}}</h1>
+                <h1>{{$subProduct->title}}</h1>
             </div>
             <div class="product_about">
                 Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
             </div>
             <div class="product_price">
-                {{$product->price}} руб.
+                {{$subProduct->price}} руб.
             </div>
             <div class="button_product">
                 Добавить в корзину
@@ -103,21 +109,5 @@
 </div>
 <div class="product_page_h2">
     <h2>Каталог клейм для поддонов</h2>
-</div>
-<div class="sub_products">
-    @foreach ($product->subProducts as $subProduct )
-    <div class="sub_products__item">
-        <img src="{{$product->preview_image}}">
-        <h2>{{$subProduct->title}}</h2>
-        <div class="sub_product__flex">
-        <div class="price">
-            {{$subProduct->price}} руб.
-        </div>
-        <a class="sub_product_button" href="{{route('subproduct.show',$subProduct)}}">
-            Подробнее
-        </a>
-        </div>
-    </div>
-    @endforeach
 </div>
 @endsection
