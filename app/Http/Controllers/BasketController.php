@@ -61,4 +61,25 @@ class BasketController extends Controller
             return redirect()->back();
         }
     }
+    public function addCount(BasketProducts $product)
+    {
+            $basket = Basket::where('session_id', session()->getId())->first();
+            $basketProduct = BasketProducts::where('basket_id',$basket->id)->where('product',$product->product)->first();
+            $basketProduct->count++;
+            $basketProduct->save();
+            return redirect()->back();
+    }
+    public function lowCount(BasketProducts $product)
+    {
+        $basket = Basket::where('session_id', session()->getId())->first();
+        $basketProduct = BasketProducts::where('basket_id',$basket->id)->where('product',$product->product)->first();
+        $basketProduct->count--;
+        if($basketProduct->count < 1)
+        {
+            $basketProduct->delete();
+            return redirect()->back();
+        }
+        $basketProduct->save();
+        return redirect()->back();
+    }
 }

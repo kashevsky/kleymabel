@@ -19,4 +19,6 @@ Route::get('/product/{product}','\App\Http\Controllers\ProductController@show')-
 Route::get('/subproduct/{subProduct}','\App\Http\Controllers\SubProductController@show')->name('subproduct.show');
 Route::get('/basket-show/1/2/3/4','\App\Http\Controllers\BasketController@show')->name('basket.show');
 Route::post('/basket/add-product/{product}','\App\Http\Controllers\BasketController@addProduct')->name('basket.add-product');
+Route::post('/basket/add-product-count/{product}','\App\Http\Controllers\BasketController@addCount')->name('basket.add-product-count');
+Route::post('/basket/low-product-count/{product}','\App\Http\Controllers\BasketController@lowCount')->name('basket.low-product-count');
 Route::post('/basket/add-subproduct/{subProduct}','\App\Http\Controllers\BasketController@addSubProduct')->name('basket.add-subProduct');
