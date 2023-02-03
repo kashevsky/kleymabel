@@ -46,7 +46,9 @@
                 {{$product->price}} руб.
             </div>
             <div class="button_product">
-                Добавить в корзину
+                <form action="{{route('basket.add',$product)}}" method="post">
+                    @csrf
+                <input type="submit" value="Добавить в корзину">
             </div>
             <div class="haracteristics">
             <p>Характеристики</p>

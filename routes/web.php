@@ -17,3 +17,5 @@ Route::get('/','\App\Http\Controllers\IndexController@index')->name('index');
 Route::get('/{category}','\App\Http\Controllers\IndexController@show')->name('category.show');
 Route::get('/product/{product}','\App\Http\Controllers\ProductController@show')->name('product.show');
 Route::get('/subproduct/{subProduct}','\App\Http\Controllers\SubProductController@show')->name('subproduct.show');
+Route::get('/basket-show/1/2/3/4','\App\Http\Controllers\BasketController@show')->name('basket.show');
+Route::post('/basket/add/{product}','\App\Http\Controllers\BasketController@add')->name('basket.add');

@@ -18,4 +18,24 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+    public static function addToCart($product_id)
+    {
+        if($cart = self::where(["session_id" => session()->getId(), "product_id" => $product->id])->first())
+        {
+            $cart->count++;
+            $cart->save();
+        }
+        else
+        {
+            $cart = self::create(
+                [
+                    "session_id" => session()->getId(),
+                    "product)id" => $product->id,
+                    "count" => 1,
+                    "price" => $product->price,
+                ]
+                );
+            return $cart;
+        }
+    }
 }

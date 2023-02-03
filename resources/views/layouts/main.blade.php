@@ -59,7 +59,7 @@
                     <img src="/images/line.svg">
                 </div>
                 <div class="basket">
-                    <a href="">
+                    <a href="{{route('basket.show')}}">
                         <img src="/images/basket.svg">
                     </a>
                 </div>
