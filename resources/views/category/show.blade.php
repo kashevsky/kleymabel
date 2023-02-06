@@ -99,7 +99,7 @@
     <h2>Каталог клейм для поддонов</h2>
 </div>
 <div class="sub_products">
-    @foreach ($category->products as $product )
+    @foreach ($products as $product )
     <div class="sub_products__item">
         <img src="{{$product->preview_image}}">
         <h2>{{$product->title}}</h2>

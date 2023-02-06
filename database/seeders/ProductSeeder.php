@@ -29,6 +29,7 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
+            'sub_products_ids'=> '3,4',
         ]);
         Product::create([
             'title'=>'Клеймо для поддонов EUR',
@@ -56,6 +57,39 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
+            'sub_products_ids'=> null,
+        ]);
+        Product::create([
+            'title'=>'Фитосанитарный штамп для поддонов IPPC 40х70',
+            'description'=>'Фитосанитарный штамп для поддонов IPPC 40х70',
+            'preview_image'=>'http://kleymabel.by/ippc4070ht.png',
+            'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
+            'price'=>90,
+            'engraving_depth'=>'1.2 мм',
+            'material'=>'Латунь',
+            'width'=>'12 мм',
+            'accessories'=>'На ручке/нагревателе',
+            'form'=>'',
+            'garanty'=>'1 год',
+            'slug'=>'kleymo_ippc40x70',
+            'category_id'=>1,
+            'sub_products_ids'=> null,
+        ]);
+        Product::create([
+            'title'=>'Фитосанитарный штамп для поддонов IPPC 55х60',
+            'description'=>'Фитосанитарный штамп для поддонов IPPC 55х60',
+            'preview_image'=>'http://kleymabel.by/ippc4070ht.png',
+            'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
+            'price'=>90,
+            'engraving_depth'=>'1.2 мм',
+            'material'=>'Латунь',
+            'width'=>'12 мм',
+            'accessories'=>'На ручке/нагревателе',
+            'form'=>'',
+            'garanty'=>'1 год',
+            'slug'=>'kleymo_ippc55x60',
+            'category_id'=>1,
+            'sub_products_ids'=> null,
         ]);
     }
 }

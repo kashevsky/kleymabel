@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\BasketProduct;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Basket extends Model
 {
@@ -11,6 +12,6 @@ class Basket extends Model
     protected $guarded = false;
     public function products()
     {
-        return $this->hasMany(BasketProducts::class,'basket_id','id');
+        return $this->hasMany(BasketProduct::class,'basket_id','id');
     }
 }

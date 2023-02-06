@@ -105,7 +105,7 @@
     <h2>Каталог клейм для поддонов</h2>
 </div>
 <div class="sub_products">
-    @foreach ($product->subProducts as $subProduct )
+    @foreach ($subProducts as $subProduct )
     <div class="sub_products__item">
         <img src="{{$product->preview_image}}">
         <h2>{{$subProduct->title}}</h2>
@@ -113,7 +113,7 @@
         <div class="price">
             {{$subProduct->price}} руб.
         </div>
-        <a class="sub_product_button" href="{{route('subproduct.show',$subProduct)}}">
+        <a class="sub_product_button" href="{{route('product.showSubProduct',$subProduct)}}">
             Подробнее
         </a>
         </div>

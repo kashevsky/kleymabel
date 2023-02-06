@@ -8,16 +8,16 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('category.show',$subProduct->product->category)}}">
-        {{$subProduct->product->category->title}}
+        <a href="{{route('category.show',$category)}}">
+        {{$category->title}}
         </a>
     </div>
     <img src="/images/array.svg">
-    <div class="bread_crumbs__item">
-        <a href="{{route('product.show',$subProduct->product)}}">
-        {{$subProduct->product->title}}
+    {{-- <div class="bread_crumbs__item">
+        <a href="{{route('product.show',$product)}}">
+        {{$product->title}}
         </a>
-    </div>
+    </div> --}}
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
         <span style="color: red; font-weight: 400">
@@ -51,7 +51,7 @@
             <div class="product_price">
                 {{$subProduct->price}} руб.
             </div>
-                <form action="{{route('basket.add-subProduct',$subProduct)}}" method="post">
+                <form action="{{route('basket.add-product',$subProduct)}}" method="post">
                     @csrf
                 <input type="submit" value="Добавить в корзину" class="add_to_cart">
             <div class="haracteristics">
@@ -106,8 +106,5 @@
         </div>
     </div>
 </div>
-</div>
-<div class="product_page_h2">
-    <h2>Каталог клейм для поддонов</h2>
 </div>
 @endsection

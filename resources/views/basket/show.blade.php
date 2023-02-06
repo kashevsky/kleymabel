@@ -20,7 +20,7 @@
 
         @foreach ($basket->products as $product )
         <tr>
-            <td>{{$product->product}}</td>
+            <td>{{$product->title}}</td>
             <td>
               <div class="count">
                 <form action="{{route('basket.add-product-count',$product)}}" method="post">
@@ -28,7 +28,7 @@
                 <input type="submit" value="+">
                 </form>
                 <p>{{$product->count}}</p>
-                <form action="{{route('basket.low-product-count',$product)}}" method="post">
+                <form action="{{route('basket.low-product-count',$product)}}" method="post" name="low_count_{{$product->id}}">
                   @csrf
                 <input type="submit" value="-">
                 </form>

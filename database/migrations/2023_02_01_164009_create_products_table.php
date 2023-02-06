@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('form')->nullable();
             $table->string('garanty')->nullable();
             $table->string('slug')->nullable();
+            $table->string('sub_products_ids')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->index('category_id');
             $table->foreign('category_id')->on('categories')->references('id');

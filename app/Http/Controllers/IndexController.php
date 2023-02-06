@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -15,6 +16,7 @@ class IndexController extends Controller
     public function show(Category $category)
     {
         $categories = Category::get();
-        return view('category.show', compact('category','categories'));
+        $products = $category->products()->whereNotNull('sub_products_ids')->get();
+        return view('category.show', compact('category','categories','products'));
     }
 }
