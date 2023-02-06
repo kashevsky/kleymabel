@@ -68,6 +68,15 @@
     color: white;
     margin-bottom: 7vh;
 }
+.add_to_cart{
+    background: #FE201D;
+    text-align: center;
+    width: 15vw;
+    padding: 1vh 0.5vw;
+    color: white;
+    margin-bottom: 7vh;
+    border: none;
+}
 .haracteristics p{
     padding-bottom: 20px;
     font-size: 20px;

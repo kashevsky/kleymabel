@@ -16,13 +16,22 @@ justify-content: center;
     text-align: center;
     font-size: 5vh;
    }
-.button_to_main_page{
+.basket_button{
     background-color: red;
     width: 15vw;
     color: white;
     padding: 1vh 0;
     margin-top: 5vh;
+    margin: 1px auto;
+    text-align: center;
+    margin-top: 3vh;
 }
-.button_to_main_page a{
+.basket_button a{
     color: white;
+}
+.count{
+    display: flex;
+}
+.count p{
+    margin: 0 5px;
 }

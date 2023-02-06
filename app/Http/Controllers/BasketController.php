@@ -77,9 +77,16 @@ class BasketController extends Controller
         if($basketProduct->count < 1)
         {
             $basketProduct->delete();
+            $basket->delete();
             return redirect()->back();
         }
         $basketProduct->save();
         return redirect()->back();
+    }
+    public function confirm()
+    {
+        $basket = Basket::where('session_id', session()->getId())->first();
+        $basketProducts = BasketProducts::where('basket_id',$basket->id)->get();
+        return view('basket.confirm', compact('basketProducts'));
     }
 }
