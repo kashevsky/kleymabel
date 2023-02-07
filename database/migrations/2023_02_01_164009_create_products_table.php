@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('sub_products_ids')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->index('category_id');
+            $table->unsignedBigInteger('product_id')->nullable();
             $table->foreign('category_id')->on('categories')->references('id');
             $table->timestamps();
         });

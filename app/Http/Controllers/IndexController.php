@@ -16,7 +16,7 @@ class IndexController extends Controller
     public function show(Category $category)
     {
         $categories = Category::get();
-        $products = $category->products()->whereNotNull('sub_products_ids')->get();
+        $products = $category->products()->whereNull('product_id')->get();
         return view('category.show', compact('category','categories','products'));
     }
 }

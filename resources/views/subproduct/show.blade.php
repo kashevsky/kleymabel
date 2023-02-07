@@ -13,11 +13,11 @@
         </a>
     </div>
     <img src="/images/array.svg">
-    {{-- <div class="bread_crumbs__item">
+    <div class="bread_crumbs__item">
         <a href="{{route('product.show',$product)}}">
         {{$product->title}}
         </a>
-    </div> --}}
+    </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
         <span style="color: red; font-weight: 400">

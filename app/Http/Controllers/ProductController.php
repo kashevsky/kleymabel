@@ -18,8 +18,7 @@ class ProductController extends Controller
     {
         $categories = Category::get();
         $category = $subProduct->category;
-        $product = Product::where('sub_products_ids', $subProduct->id)->first();
-
+        $product = $category->products()->where('id',$subProduct->product_id)->first();
         return view('subproduct.show',compact('subProduct','categories','category','product'));
     }
 }

@@ -73,7 +73,7 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc40x70',
             'category_id'=>1,
-            'sub_products_ids'=> null,
+            'product_id'=>1
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 55х60',
@@ -90,6 +90,7 @@ class ProductSeeder extends Seeder
             'slug'=>'kleymo_ippc55x60',
             'category_id'=>1,
             'sub_products_ids'=> null,
+            'product_id'=>1
         ]);
     }
 }
