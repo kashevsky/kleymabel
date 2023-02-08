@@ -107,7 +107,7 @@
 <div class="sub_products">
     @foreach ($subProducts as $subProduct )
     <div class="sub_products__item">
-        <img src="{{$product->preview_image}}">
+        <img src="{{$subProduct->preview_image}}">
         <h2>{{$subProduct->title}}</h2>
         <div class="sub_product__flex">
         <div class="price">
