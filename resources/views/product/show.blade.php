@@ -24,7 +24,7 @@
         @foreach ($categories as $item )
         <li>
             <a href="{{route('category.show',$item)}}">
-            <img src="{{Storage::url($item->icon_black)}}">
+            <img src="{{$item->icon_black}}">
             <p>{{$item->title}}</p>
             </a>
         </li>

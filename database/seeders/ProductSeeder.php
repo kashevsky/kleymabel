@@ -92,5 +92,21 @@ class ProductSeeder extends Seeder
             'sub_products_ids'=> null,
             'product_id'=>1
         ]);
+        // Product::create([
+        //     'title'=>'',
+        //     'description'=>'',
+        //     'preview_image'=>'',
+        //     'content'=>'',
+        //     'price'=>'',
+        //     'engraving_depth'=>'1.2 мм',
+        //     'material'=>'Латунь',
+        //     'width'=>'12 мм',
+        //     'accessories'=>'На ручке/нагревателе',
+        //     'form'=>'',
+        //     'garanty'=>'1 год',
+        //     'slug'=>'',
+        //     'category_id'=>'',
+        //     'product_id'=>'',
+        // ]);
     }
 }
