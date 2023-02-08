@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
-            'sub_products_ids'=> '3,4',
+            
         ]);
         Product::create([
             'title'=>'Клеймо для поддонов EUR',
@@ -57,7 +57,7 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
-            'sub_products_ids'=> null,
+            
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 40х70',
@@ -89,7 +89,6 @@ class ProductSeeder extends Seeder
             'garanty'=>'1 год',
             'slug'=>'kleymo_ippc55x60',
             'category_id'=>1,
-            'sub_products_ids'=> null,
             'product_id'=>1
         ]);
         // Product::create([

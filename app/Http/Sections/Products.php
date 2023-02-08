@@ -34,7 +34,7 @@ class Products extends Section implements Initializable
     /**
      * @var string
      */
-    protected $title;
+    protected $title = 'Товары';
 
     /**
      * @var string
@@ -102,11 +102,11 @@ class Products extends Section implements Initializable
                 AdminFormElement::text('description', 'Описание'),
                 AdminFormElement::html('Расположение в каталоге'),
                 AdminFormElement::select('category_id', 'Выбор категории')->setModelForOptions(\App\Models\Category::class),
-                AdminFormElement::select('product_id', 'Выбор продукта')->setModelForOptions(\App\Models\Product::class),
+                AdminFormElement::multiselect('sub_products_ids','Выбор вложенных продуктов',\App\Models\Product::class),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::textarea('content', 'Текст'),
+                AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
                 AdminFormElement::image('preview_image', 'Отображение'),
             ],'col-xs-12 col-sm-6 col-md-8 col-lg-12'),

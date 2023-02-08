@@ -2,20 +2,21 @@
 
 namespace App\Http\Sections;
 
-use AdminColumn;
-use AdminColumnFilter;
-use AdminDisplay;
 use AdminForm;
+use AdminColumn;
+use AdminDisplay;
 use AdminFormElement;
+use AdminColumnFilter;
+use App\Models\Product;
+use SleepingOwl\Admin\Section;
 use Illuminate\Database\Eloquent\Model;
-use SleepingOwl\Admin\Contracts\Display\DisplayInterface;
-use SleepingOwl\Admin\Contracts\Form\FormInterface;
-use SleepingOwl\Admin\Contracts\Initializable;
-use SleepingOwl\Admin\Form\Buttons\Cancel;
 use SleepingOwl\Admin\Form\Buttons\Save;
+use SleepingOwl\Admin\Form\Buttons\Cancel;
+use SleepingOwl\Admin\Contracts\Initializable;
 use SleepingOwl\Admin\Form\Buttons\SaveAndClose;
 use SleepingOwl\Admin\Form\Buttons\SaveAndCreate;
-use SleepingOwl\Admin\Section;
+use SleepingOwl\Admin\Contracts\Form\FormInterface;
+use SleepingOwl\Admin\Contracts\Display\DisplayInterface;
 
 /**
  * Class Categories
@@ -34,7 +35,7 @@ class Categories extends Section implements Initializable
     /**
      * @var string
      */
-    protected $title;
+    protected $title = 'Категории';
 
     /**
      * @var string
@@ -107,9 +108,7 @@ class Categories extends Section implements Initializable
                 ,
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::textarea('content', 'Текст')
-                ->required()
-                ,
+                AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена')
                 ->required()
                 ,
@@ -125,7 +124,6 @@ class Categories extends Section implements Initializable
                 AdminFormElement::text('width', 'Ширина основания')
                 ->required(),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::checkbox('sub_products_ids','Продукты'),
             ], 'col-xs-12 col-sm-6 col-md-4 col-lg-12')
         ]);
 

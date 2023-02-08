@@ -2,20 +2,9 @@
 
 use SleepingOwl\Admin\Navigation\Page;
 
-// Default check access logic
-// AdminNavigation::setAccessLogic(function(Page $page) {
-// 	   return auth()->user()->isSuperAdmin();
-// });
-//
-// AdminNavigation::addPage(\App\User::class)->setTitle('test')->setPages(function(Page $page) {
-// 	  $page
-//		  ->addPage()
-//	  	  ->setTitle('Dashboard')
-//		  ->setUrl(route('admin.dashboard'))
-//		  ->setPriority(100);
-//
-//	  $page->addPage(\App\User::class);
-// });
+
+
+
 //
 // // or
 //
@@ -23,15 +12,15 @@ use SleepingOwl\Admin\Navigation\Page;
 
 return [
     [
-        'title' => 'Dashboard',
-        'icon'  => 'fas fa-tachometer-alt',
-        'url'   => route('admin.dashboard'),
+        // 'title' => 'Dashboard',
+        // 'icon'  => 'fas fa-tachometer-alt',
+        // 'url'   => route('admin.dashboard'),
     ],
 
     [
-        'title' => 'Information',
-        'icon'  => 'fas fa-info-circle',
-        'url'   => route('admin.information'),
+        // 'title' => 'Information',
+        // 'icon'  => 'fas fa-info-circle',
+        // 'url'   => route('admin.information'),
     ],
 
     // Examples
