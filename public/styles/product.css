@@ -38,6 +38,7 @@
 }
 .product{
     display: flex;
+    color: #363636;
 }
 .slider img{
     width: 25vw;
@@ -48,6 +49,7 @@
 }
 .product_title h1{
     text-align: start;
+    padding-bottom: 2vh;
     font-size: 30px;
 }
 .product_about{
@@ -102,7 +104,7 @@ table {
 }
 .product_page_h2 h2{
     text-align: center;
-    line-height: 12vh;
+    padding: 8vh 0;
     background: #F7F7F7;
     font-family: 'Montserrat';
     font-size: 30px;
@@ -121,7 +123,8 @@ table {
     background: white;
     margin-bottom: 10vh;
     margin-left: 2vw;
-    padding-bottom: 2vh;
+    padding: 2vh 2vw;
+    width: 20vw;
 }
 .sub_products__item img{
     width: 20vw;

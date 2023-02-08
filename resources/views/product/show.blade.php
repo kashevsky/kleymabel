@@ -102,7 +102,7 @@
 </div>
 </div>
 <div class="product_page_h2">
-    <h2>Каталог клейм для поддонов</h2>
+    <h2>Каталог</h2>
 </div>
 <div class="sub_products">
     @foreach ($subProducts as $subProduct )

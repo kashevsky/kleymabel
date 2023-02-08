@@ -96,7 +96,7 @@
 </div>
 </div>
 <div class="product_page_h2">
-    <h2>Каталог клейм для поддонов</h2>
+    <h2>Каталог</h2>
 </div>
 <div class="sub_products">
     @foreach ($products as $product )
@@ -113,5 +113,29 @@
         </div>
     </div>
     @endforeach
+</div>
+@if($category->is_stamp == 1)
+<div class="options">
+    <h2>Варианты нагрева клейма</h2>
+    <div class="options_row">
+        <div class="options_item">
+            <img src="http://kleymabel.by/termo.jpg">
+            <div class="options_text">
+                <h3>Штамп на нагревателе</h3>
+                <p>Электрическое устройство для нагрева клише мощностями 500 и 1000Вт. Предназначено специально для клеймения паллет.</p>
+            </div>
+        </div>
+        <div class="options_item">
+            <img src="http://kleymabel.by/rchka.jpg">
+            <div class="options_text">
+                <h3>Штамп на ручке</h3>
+                <p>Основание устанавливается на ручку. Нагрев производится от источника открытого огня: газовой горелки, костра или плиты.</p>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
+<div class="main_text">
+    {{$category->content}}
 </div>
 @endsection
