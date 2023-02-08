@@ -9,6 +9,7 @@ use App\Models\SubProduct;
 use Illuminate\Http\Request;
 use App\Models\BasketProduct;
 use Illuminate\Support\Facades\Log;
+use App\Http\Requests\BasketRequest;
 use Illuminate\Support\Facades\Mail;
 
 class BasketController extends Controller
@@ -92,17 +93,26 @@ class BasketController extends Controller
         $basketProduct->save();
         return redirect()->route('basket.show');
     }
-    public function confirm(Request $request)
+    public function confirm(BasketRequest $request)
     {       
             $basket = Basket::where('session_id', session()->getId())->first();
             $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
             $basket->update($request->only('name','email','phone'));
-            $data['name'] = $request['name'];
+            if(isset($request->name))
+            {
+                $data['name'] = $request['name'];
+            }
+            if(isset($request->email))
+            {
+                $data['email'] = $request['email'];
+            }
             $data['phone'] = $request['phone'];
-            $data['email'] = $request['email'];
-            $imageName = time().'.'.$request->image->extension();
-            $request->image->move(public_path('images'), $imageName);
-            $data['image'] = $imageName;
+            if(isset($request->image))
+            {
+                $imageName = time().'.'.$request->image->extension();
+                $request->image->move(public_path('images'), $imageName);
+                $data['image'] = $imageName;
+            }
             $order = null;
             foreach($basketProducts as $basketProduct)
             {

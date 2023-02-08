@@ -44,6 +44,9 @@
       <input type="text" name="name" placeholder="Имя">
     </div>
     <div>
+      @error('phone')
+        <p style="color: red; padding-bottom:10px">{{$message}}</p>
+      @enderror
       <input type="text" name="phone" placeholder="Телефон">
     </div>
     <div>
@@ -59,11 +62,6 @@
     <input type="submit">
     </form>
   </div>
-  {{-- <div class="basket_button">
-    <a href="{{route('basket.confirm')}}">
-      Подтвердить заказ
-    </a>
-    </div> --}}
  @endif
 </div>
 @endsection
