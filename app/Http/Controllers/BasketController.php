@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use App\Models\Basket;
 use App\Models\Product;
 use App\Models\SubProduct;
 use Illuminate\Http\Request;
 use App\Models\BasketProduct;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class BasketController extends Controller
 {
@@ -90,10 +92,24 @@ class BasketController extends Controller
         $basketProduct->save();
         return redirect()->route('basket.show');
     }
-    public function confirm()
-    {
-        $basket = Basket::where('session_id', session()->getId())->first();
-        $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
-        return view('basket.confirm', compact('basketProducts'));
+    public function confirm(Request $request)
+    {       
+            $basket = Basket::where('session_id', session()->getId())->first();
+            $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
+            $basket->update($request->only('name','email','phone'));
+            $data['name'] = $request['name'];
+            $data['phone'] = $request['phone'];
+            $data['email'] = $request['email'];
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $data['image'] = $imageName;
+            $order = null;
+            foreach($basketProducts as $basketProduct)
+            {
+                $order .= $basketProduct->title . ', ';
+            }
+            $data['order'] = $order;
+            Mail::to('kashevsky.d@yandex.ru')->send(new SendMail($data));
+            return redirect()->route('index');
     }
 }

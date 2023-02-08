@@ -37,11 +37,33 @@
         </tr>
         @endforeach
   </table>
-  <div class="basket_button">
+  <div class="basket-form">
+    <form action="{{route('basket.confirm')}}" method="post" enctype="multipart/form-data">
+      @csrf
+    <div>
+      <input type="text" name="name" placeholder="Имя">
+    </div>
+    <div>
+      <input type="text" name="phone" placeholder="Телефон">
+    </div>
+    <div>
+      <input type="mail" name="email" placeholder="Почта">
+    </div>
+    <div>
+      <label>Макет</label>
+      <input type="file" name="image">
+      <div>
+      <label style="color: red">Форматы: jpeg, jpg, png, pdf</label>
+      </div>
+    </div>
+    <input type="submit">
+    </form>
+  </div>
+  {{-- <div class="basket_button">
     <a href="{{route('basket.confirm')}}">
       Подтвердить заказ
     </a>
-    </div>
+    </div> --}}
  @endif
 </div>
 @endsection
