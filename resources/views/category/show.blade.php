@@ -42,17 +42,19 @@
             <div class="button_product">
                 Добавить в корзину
             </div>
-            <div class="haracteristics">
-            <p>Характеристики</p>
-            <table>
-                @foreach ($haracteristics as $haracteristic )
-                <tr>
-                    <td>{{$haracteristic->parameter}}</td>
-                    <td>{{$haracteristic->value}}</td>
-                </tr>     
-                @endforeach 
-              </table>
-            </div>
+            @isset($haracteristics)
+                <div class="haracteristics">
+                <p>Характеристики</p>
+                <table>
+                    @foreach ($haracteristics as $haracteristic )
+                    <tr>
+                        <td>{{$haracteristic->parameter}}</td>
+                        <td>{{$haracteristic->value}}</td>
+                    </tr>     
+                    @endforeach 
+                </table>
+                </div>
+            @endisset
             <div class="product_dignities">
                 <div class="product_dignities__item">
                     <li>
@@ -77,6 +79,7 @@
     </div>
 </div>
 </div>
+@if(!$products->isEmpty())
 <div class="product_page_h2">
     <h2>Каталог</h2>
 </div>
@@ -96,28 +99,24 @@
     </div>
     @endforeach
 </div>
-@if($category->is_stamp == 1)
+@endif
+@if(!$options->isEmpty())
 <div class="options">
     <h2>Варианты нагрева клейма</h2>
     <div class="options_row">
+        @foreach ($options as $option )
         <div class="options_item">
-            <img src="http://kleymabel.by/termo.jpg">
+            <img src="{{$option->image}}">
             <div class="options_text">
-                <h3>Штамп на нагревателе</h3>
-                <p>Электрическое устройство для нагрева клише мощностями 500 и 1000Вт. Предназначено специально для клеймения паллет.</p>
+                <h3>{{$option->h3}}</h3>
+                <p>{{$option->content}}</p>
             </div>
         </div>
-        <div class="options_item">
-            <img src="http://kleymabel.by/rchka.jpg">
-            <div class="options_text">
-                <h3>Штамп на ручке</h3>
-                <p>Основание устанавливается на ручку. Нагрев производится от источника открытого огня: газовой горелки, костра или плиты.</p>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endif
-{{-- @isset($category->video) --}}
+@isset($category->video)
 <div class="video_container">
 <h2>Как пользоваться</h2>
     <div class="video">
@@ -125,7 +124,7 @@
         </video>
     </div>
 </div>
-{{-- @endisset --}}
+@endisset
 <div class="main_text">
     {{$category->content}}
 </div>

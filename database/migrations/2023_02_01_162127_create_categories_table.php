@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('form')->nullable();
             $table->string('garanty')->nullable();
             $table->string('slug')->nullable();
+            $table->string('video')->nullable();
             $table->text('short_desc')->nullable();
             $table->string('icon')->nullable();
             $table->string('icon_black')->nullable();
