@@ -4,6 +4,8 @@ namespace App\Models;
 
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\CategoryOptions;
+use App\Models\CategoryHaracteristics;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -13,10 +15,14 @@ class Category extends Model
     protected $guarded = false;
     public function products()
     {
-        return $this->hasMany(Product::class, 'category_id','id');
+        return $this->hasMany(Product::class);
     }
-    public function categoryHaracteristics()
+    public function haracteristics()
     {
-        return $this->belongTo(Category::class);
+        return $this->hasMany(CategoryHaracteristics::class, 'category_id','id');
+    }
+    public function options()
+    {
+        return $this->hasMany(CategoryOptions::class,'category_id','id');
     }
 }

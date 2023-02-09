@@ -19,8 +19,8 @@ class IndexController extends Controller
     {
         $categories = Category::get();
         $products = $category->products()->whereNull('product_id')->get();
-        $haracteristics = CategoryHaracteristics::where('category_id',$category->id)->get();
-        $options = CategoryOptions::where('category_id',$category->id)->get();
+        $haracteristics = $category->haracteristics;
+        $options = $category->options;
         return view('category.show', compact('category','categories','products','haracteristics','options'));
     }
 }

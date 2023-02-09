@@ -10,6 +10,7 @@ class ProductController extends Controller
 {
     public function show(Product $product)
     {
+        dd($product->subProducts);
         $categories = Category::get();
         $subProducts = Product::whereIn('id', explode(',',$product->sub_products_ids))->get();
         // $subProducts = Product::where('product_id',$product->id)->get();

@@ -14,4 +14,8 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+    public function subProducts()
+    {
+        return $this->belongsTo(\App\Models\Product::whereIn('id', explode(',',$this->sub_products_ids)));
+    }
 }

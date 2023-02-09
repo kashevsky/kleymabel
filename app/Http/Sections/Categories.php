@@ -109,22 +109,24 @@ class Categories extends Section implements Initializable
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::wysiwyg('content', 'Текст'),
-                AdminFormElement::number('price', 'Цена')
-                ->required()
-                ,
-                AdminFormElement::image('preview_image', 'Отображение')
-                ->required()
-                ,
-                AdminFormElement::html('Характеристики'),
+                AdminFormElement::number('price', 'Цена'),
+                AdminFormElement::image('preview_image', 'Отображение'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::text('engraving_depth', 'Глубина гравировки')
-                ->required(),
-                AdminFormElement::text('material', 'Материал')
-                ->required(),
-                AdminFormElement::text('width', 'Ширина основания')
-                ->required(),
+                AdminFormElement::html('Варианты использования (модификации)'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::multiselect('category_id','Выбор вложенных продуктов',\App\Models\Product::class),
+                AdminFormElement::hasMany('options', [
+                    AdminFormElement::text('h3','Заголовок'),
+                    AdminFormElement::textarea('content','Текст'),
+                    AdminFormElement::image('image','Изображение'),
+                ]),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::html('Характеристики товара'),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::hasMany('haracteristics', [
+                    AdminFormElement::text('parameter','Параметр'),
+                    AdminFormElement::text('value','Значение'),
+                ]),
+                AdminFormElement::html('<hr>'),
             ], 'col-xs-12 col-sm-6 col-md-4 col-lg-12')
         ]);
 
