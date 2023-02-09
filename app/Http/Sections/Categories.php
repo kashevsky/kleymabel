@@ -124,6 +124,7 @@ class Categories extends Section implements Initializable
                 AdminFormElement::text('width', 'Ширина основания')
                 ->required(),
                 AdminFormElement::html('<hr>'),
+                AdminFormElement::multiselect('category_id','Выбор вложенных продуктов',\App\Models\Product::class),
             ], 'col-xs-12 col-sm-6 col-md-4 col-lg-12')
         ]);
 
