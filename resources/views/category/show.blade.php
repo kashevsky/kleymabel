@@ -45,30 +45,12 @@
             <div class="haracteristics">
             <p>Характеристики</p>
             <table>
+                @foreach ($haracteristics as $haracteristic )
                 <tr>
-                  <td>Глубина гравировки</td>
-                  <td>1,2 мм</td>
-                </tr>
-                <tr>
-                  <td>Материал</td>
-                  <td>Латунь</td>
-                </tr>
-                <tr>
-                  <td>Ширина основания</td>
-                  <td>14 мм</td>
-                </tr>
-                <tr>
-                    <td>Оснастка</td>
-                    <td>На ручке/паяльнике/термоустановке</td>
-                </tr>
-                <tr>
-                    <td>Форма</td>
-                    <td>По желанию заказчика</td>
-                </tr>
-                <tr>
-                    <td>Гарантия</td>
-                    <td>1 год</td>
-                </tr>
+                    <td>{{$haracteristic->parameter}}</td>
+                    <td>{{$haracteristic->value}}</td>
+                </tr>     
+                @endforeach 
               </table>
             </div>
             <div class="product_dignities">
@@ -135,6 +117,15 @@
     </div>
 </div>
 @endif
+{{-- @isset($category->video) --}}
+<div class="video_container">
+<h2>Как пользоваться</h2>
+    <div class="video">
+        <video controls="controls">
+        </video>
+    </div>
+</div>
+{{-- @endisset --}}
 <div class="main_text">
     {{$category->content}}
 </div>

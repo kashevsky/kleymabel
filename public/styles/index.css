@@ -151,4 +151,21 @@ min-height: 210px;
     font-size: 16px;
     line-height: 170.5%
 }
+.video_container{
+    background-color: #F7F7F7;
+    padding: 5vh 0;
+}
+.video_container h2
+{
+    text-align: center;
+}
+.video{
+    margin: 1px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    background-color: #363636;
+}
+
 /* end about index page */

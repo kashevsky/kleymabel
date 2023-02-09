@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->unsignedBigInteger('basket_id')->nullable();
-            $table->foreign('basket_id')->on('baskets')->references('id')->onDelete('cascade');;
+            $table->foreign('basket_id')->on('baskets')->references('id')->onDelete('cascade');
             $table->integer('count')->default(1);
             $table->timestamps();
         });
