@@ -5,7 +5,7 @@
         <nav>
             @foreach ($categories as $item)
             <li>
-                <a href="{{route('category.show',$item)}}">
+                <a href="{{route('category.show',$item->slug)}}">
                 <img src="{{$item->icon}}">
                 <p>{{$item->title}}</p>
                 </a>
@@ -26,7 +26,7 @@
                     {{$category->price}} руб.
                 </p>
                 <div class="button">
-                    <a href="{{route('category.show',$category)}}">Подробнее</a>
+                    <a href="{{route('category.show',$category->slug)}}">Подробнее</a>
                 </div>
             </div>
         </div>

@@ -15,9 +15,10 @@ class IndexController extends Controller
         $categories = Category::get();
         return view('index', compact('categories'));
     }
-    public function show(Category $category)
+    public function show($slug)
     {
         $categories = Category::get();
+        $category = $categories->where('slug',$slug)->first();
         $products = $category->products()->whereNull('product_id')->get();
         $haracteristics = $category->haracteristics;
         $options = $category->options;

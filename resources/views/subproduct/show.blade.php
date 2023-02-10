@@ -8,13 +8,13 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('category.show',$category)}}">
+        <a href="{{route('category.show',$category->slug)}}">
         {{$category->title}}
         </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('product.show',$product)}}">
+        <a href="{{route('product.show',$product->slug)}}">
         {{$product->title}}
         </a>
     </div>
@@ -29,7 +29,7 @@
     <div class="product_nav">
         @foreach ($categories as $item )
         <li>
-            <a href="{{route('category.show',$item)}}">
+            <a href="{{route('category.show',$item->slug)}}">
             <img src="{{$item->icon_black}}">
             <p>{{$item->title}}</p>
             </a>

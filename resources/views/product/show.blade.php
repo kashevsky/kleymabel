@@ -8,7 +8,7 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('category.show',$product->category)}}">
+        <a href="{{route('category.show',$product->category->slug)}}">
         {{$product->category->title}}
         </a>
     </div>
@@ -23,7 +23,7 @@
     <div class="product_nav">
         @foreach ($categories as $item )
         <li>
-            <a href="{{route('category.show',$item)}}">
+            <a href="{{route('category.show',$item->slug)}}">
             <img src="{{$item->icon_black}}">
             <p>{{$item->title}}</p>
             </a>
@@ -113,7 +113,7 @@
         <div class="price">
             {{$subProduct->price}} руб.
         </div>
-        <a class="sub_product_button" href="{{route('product.showSubProduct',$subProduct)}}">
+        <a class="sub_product_button" href="{{route('product.showSubProduct',$subProduct->slug)}}">
             Подробнее
         </a>
         </div>
