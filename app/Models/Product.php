@@ -16,6 +16,10 @@ class Product extends Model
     }
     public function subProducts()
     {
-        return $this->belongsTo(\App\Models\Product::whereIn('id', explode(',',$this->sub_products_ids)));
+        return $this->whereIn('id', explode(',',$this->sub_products_ids))->get();
+    }
+    public function haracteristics()
+    {
+        return $this->hasMany(Haracteristics::class, 'product_id','id');
     }
 }

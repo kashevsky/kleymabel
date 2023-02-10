@@ -20,12 +20,6 @@ return new class extends Migration
             $table->string('preview_image')->nullable();
             $table->text('content')->nullable();
             $table->float('price')->nullable();
-            $table->string('engraving_depth')->nullable();
-            $table->string('material')->nullable();
-            $table->string('width')->nullable();
-            $table->string('accessories')->nullable();
-            $table->string('form')->nullable();
-            $table->string('garanty')->nullable();
             $table->string('slug')->nullable();
             $table->string('sub_products_ids')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();

@@ -102,13 +102,21 @@ class Products extends Section implements Initializable
                 AdminFormElement::text('description', 'Описание'),
                 AdminFormElement::html('Расположение в каталоге'),
                 // AdminFormElement::select('category_id', 'Выбор категории')->setModelForOptions(\App\Models\Category::class),
-                AdminFormElement::multiselect('sub_products_ids','Выбор вложенных продуктов',\App\Models\Product::class),
+                AdminFormElement::multiselect('sub_products_ids', 'Выбор вложенных продуктов')->setModelForOptions(\App\Models\Product::class)->setDisplay('title'),
+                // AdminFormElement::multiselect('sub_products_ids','Выбор вложенных продуктов',\App\Models\Product::class),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
                 AdminFormElement::image('preview_image', 'Отображение'),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::html('Характеристики товара'),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::hasMany('haracteristics', [
+                    AdminFormElement::text('parameter','Параметр'),
+                    AdminFormElement::text('value','Значение'),
+                ]),
             ],'col-xs-12 col-sm-6 col-md-8 col-lg-12'),
         ]);
 

@@ -111,6 +111,7 @@ class Categories extends Section implements Initializable
                 AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
                 AdminFormElement::image('preview_image', 'Отображение'),
+                AdminFormElement::textarea('short_desc','Краткое описание'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Варианты использования (модификации)'),
                 AdminFormElement::html('<hr>'),

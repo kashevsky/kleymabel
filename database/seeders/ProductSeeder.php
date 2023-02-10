@@ -21,15 +21,9 @@ class ProductSeeder extends Seeder
             'preview_image'=>'http://kleymabel.by/ippc.jpeg',
             'content'=>'',
             'price'=>92,
-            'engraving_depth'=>'1.2 мм',
-            'material'=>'',
-            'width'=>'12 мм',
-            'accessories'=>'На ручке/нагревателе',
-            'form'=>'',
-            'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
-            
+            'sub_products_ids'=>'3,4'
         ]);
         Product::create([
             'title'=>'Клеймо для поддонов EUR',
@@ -49,12 +43,6 @@ class ProductSeeder extends Seeder
             Нагрев производится 6-8 минут
             Сопутствующие товары',
             'price'=>114,
-            'engraving_depth'=>'1.2 мм',
-            'material'=>'',
-            'width'=>'12 мм',
-            'accessories'=>'На ручке/нагревателе',
-            'form'=>'',
-            'garanty'=>'1 год',
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
             
@@ -65,12 +53,6 @@ class ProductSeeder extends Seeder
             'preview_image'=>'http://kleymabel.by/ippc4070ht.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
             'price'=>90,
-            'engraving_depth'=>'1.2 мм',
-            'material'=>'Латунь',
-            'width'=>'12 мм',
-            'accessories'=>'На ручке/нагревателе',
-            'form'=>'',
-            'garanty'=>'1 год',
             'slug'=>'kleymo_ippc40x70',
             'category_id'=>1,
             'product_id'=>1
@@ -81,12 +63,6 @@ class ProductSeeder extends Seeder
             'preview_image'=>'http://kleymabel.by/ippc4070ht.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
             'price'=>90,
-            'engraving_depth'=>'1.2 мм',
-            'material'=>'Латунь',
-            'width'=>'12 мм',
-            'accessories'=>'На ручке/нагревателе',
-            'form'=>'',
-            'garanty'=>'1 год',
             'slug'=>'kleymo_ippc55x60',
             'category_id'=>1,
             'product_id'=>1

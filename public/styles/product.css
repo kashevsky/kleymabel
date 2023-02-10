@@ -19,18 +19,16 @@
     display: flex;
     justify-content: center;
     padding-top: 7vh;
-    margin: 0 7vw;
 }
 .product_nav{
-    width: 15vw;
-    min-width: 15vw;
-    padding: 0 5vw 0 0;
+    min-width: 5vw;
+    margin: 0 8vw 0 2vw;
     white-space: nowrap;
 }
 .product_nav a{
     display: flex;
     align-items: center;
-    line-height: 50px;
+    line-height: 45px;
     color: #363636;
 }
 .product_nav img{
@@ -42,7 +40,7 @@
 }
 .slider img{
     width: 25vw;
-    min-width: 400px;
+    min-width: 300px;
 }
 .product_info{
     padding-left: 5vw;
@@ -131,6 +129,7 @@ table {
 }
 .sub_products__item h2{
     text-align: center;
+    font-size: 2vh;
 }
 .sub_product__flex{
     display: flex;

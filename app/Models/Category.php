@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\CategoryOptions;
-use App\Models\CategoryHaracteristics;
+use App\Models\Haracteristics;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -19,7 +19,7 @@ class Category extends Model
     }
     public function haracteristics()
     {
-        return $this->hasMany(CategoryHaracteristics::class, 'category_id','id');
+        return $this->hasMany(Haracteristics::class, 'category_id','id');
     }
     public function options()
     {

@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\CategoryHaracteristics;
+use App\Models\Haracteristics;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class CategoryHaracteristicsSeeder extends Seeder
+class HaracteristicsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,15 +15,20 @@ class CategoryHaracteristicsSeeder extends Seeder
      */
     public function run()
     {
-        CategoryHaracteristics::create([
+        Haracteristics::create([
             'parameter'=>'Глубина гравировка',
             'value'=>'1,2 мм',
             'category_id'=>1,
         ]);
-        CategoryHaracteristics::create([
+        Haracteristics::create([
             'parameter'=>'Ширина основания',
             'value'=>'12 мм',
             'category_id'=>1,
+        ]);
+        Haracteristics::create([
+            'parameter'=>'Ширина основания',
+            'value'=>'12 мм',
+            'product_id'=>1,
         ]);
     }
 }
