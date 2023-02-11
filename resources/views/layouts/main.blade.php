@@ -29,9 +29,12 @@
                     </div>
                 </div>
                 <div class="header_search">
-                    <input class="input_search">
+                    <form action="{{route('search')}}" method="post">
+                    @csrf
+                    <input class="input_search" name="word">
                     <label for="input_saerch">&nbsp;</label>
-                    <input type="submit" value="Поиск" class="input_button">
+                    <input type="submit" value="Поиск" class="search_button">
+                    </form>
                 </div>
             </div>
             <div class="header_container_line">

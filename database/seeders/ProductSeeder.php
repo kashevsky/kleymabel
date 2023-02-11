@@ -55,7 +55,7 @@ class ProductSeeder extends Seeder
             'price'=>90,
             'slug'=>'kleymo_ippc40x70',
             'category_id'=>1,
-            'product_id'=>1
+            'product_id'=>1,
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 55х60',

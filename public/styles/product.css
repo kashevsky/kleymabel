@@ -19,10 +19,11 @@
     display: flex;
     justify-content: center;
     padding-top: 7vh;
+    color: #363636;
 }
 .product_nav{
     min-width: 5vw;
-    margin: 0 8vw 0 2vw;
+    margin: 0 8vw 0 1vw;
     white-space: nowrap;
 }
 .product_nav a{
@@ -53,6 +54,7 @@
 .product_about{
     width: 35vw;
     padding: 0 0 4vh 0;
+    color: #363636;
 }
 .product_price{
     color: #363636;
@@ -116,6 +118,7 @@ table {
     background: #F7F7F7;
     padding: 0 5vw;
     font-family: 'Montserrat';
+    color: #363636;
 }
 .sub_products__item{
     background: white;

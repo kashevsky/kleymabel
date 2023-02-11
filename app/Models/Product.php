@@ -14,10 +14,20 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    // public function subProducts()
+    // {
+    //     return $this->whereIn('id', explode(',',$this->sub_products_ids))->get();
+    // }
     public function subProducts()
     {
-        return $this->whereIn('id', explode(',',$this->sub_products_ids))->get();
+        return $this->hasMany(static::class,'product_id');
     }
+    public function product()
+    {
+        return $this->belongsTo(Product::class,'product_id');
+    }
+
     public function haracteristics()
     {
         return $this->hasMany(Haracteristics::class, 'product_id','id');

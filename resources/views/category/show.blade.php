@@ -120,7 +120,7 @@
 <div class="video_container">
 <h2>Как пользоваться</h2>
     <div class="video">
-        <video controls="controls">
+        <video controls="controls" src="{{$category->video}}">
         </video>
     </div>
 </div>

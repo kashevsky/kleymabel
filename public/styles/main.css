@@ -34,20 +34,23 @@ li{
 .header_search{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .input_search{
     background-image: url(../images/loop.svg);
     background-repeat: no-repeat;
     background-position: left;
-    width: 17vw;
-    padding: 4px 1px;
+    width: 15vw;
+    padding: 3px 0 0 25px;
 }
-.input_button{
+.search_button{
     all: unset;
     background: #FE201D;
     font-size: 14px;
-    padding: 3.5px 10px;
-    margin-left: -4.2px;
+    padding: 3.9px 10px;
+    margin-left: -11.1px;
+    position: relative;
+    top: -3px;
 }
 .header_container_line{
     display: flex;
