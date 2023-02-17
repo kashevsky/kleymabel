@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('session_id')->nullable();
+            $table->tinyInteger('is_confirmed')->default(0);
             $table->timestamps();
         });
     }

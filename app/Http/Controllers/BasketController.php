@@ -16,7 +16,7 @@ class BasketController extends Controller
 {
     public function show()
     {
-        $basket = Basket::where('session_id', session()->getId())->first();
+        $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
         return view('basket.show',compact('basket'));
     }
     public function addProduct(Product $product)
@@ -42,29 +42,6 @@ class BasketController extends Controller
             return redirect()->back();
         }
     }
-    // public function addSubProduct(SubProduct $subProduct)
-    // {
-    //     $basket = Basket::where('session_id', session()->getId())->first();
-    //     if(is_null($basket))
-    //     {
-    //         $basket = Basket::create([
-    //             'session_id' => session()->getId(),
-    //         ]);
-    //         BasketProducts::create(['product'=> $subProduct->title, 'basket_id'=> $basket->id]);
-    //         return redirect()->back();
-    //     }
-    //     else{
-    //         $basketProduct = BasketProducts::where('basket_id',$basket->id)->get()->last();
-    //         if($basketProduct->product == $subProduct->title)
-    //         {
-    //             $basketProduct->count++;
-    //             $basketProduct->save();
-    //             return redirect()->back();
-    //         }
-    //         BasketProducts::create(['product'=> $subProduct->title, 'basket_id'=> $basket->id]);
-    //         return redirect()->back();
-    //     }
-    // }
     public function addCount(BasketProduct $product)
     {
             $basket = Basket::where('session_id', session()->getId())->first();
@@ -80,7 +57,6 @@ class BasketController extends Controller
         $basketProduct->count--;
         if($basketProduct->count < 1)
         {
-            Log::info('Удаляем товар с id ' . $basketProduct->id);
             $basketProduct->delete();
             // if(BasketProduct::count() < 1);
             // {
@@ -98,6 +74,8 @@ class BasketController extends Controller
             $basket = Basket::where('session_id', session()->getId())->first();
             $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
             $basket->update($request->only('name','email','phone'));
+            $basket->is_confirmed = 1;
+            $basket->save();
             if(isset($request->name))
             {
                 $data['name'] = $request['name'];
