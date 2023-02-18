@@ -21,7 +21,7 @@ class BasketController extends Controller
     }
     public function addProduct(Product $product)
     {
-        $basket = Basket::where('session_id', session()->getId())->first();
+        $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
         if(is_null($basket))
         {
             $basket = Basket::create([
@@ -44,15 +44,15 @@ class BasketController extends Controller
     }
     public function addCount(BasketProduct $product)
     {
-            $basket = Basket::where('session_id', session()->getId())->first();
-            $basketProduct = BasketProduct::where('basket_id',$basket->id)->where('product',$product->title)->first();
+            $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
+            $basketProduct = BasketProduct::where('basket_id',$basket->id)->where('title',$product->title)->first();
             $basketProduct->count++;
             $basketProduct->save();
             return redirect()->back();
     }
     public function lowCount(BasketProduct $product)
     {
-        $basket = Basket::where('session_id', session()->getId())->first();
+        $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
         $basketProduct = BasketProduct::where('basket_id',$basket->id)->where('title',$product->title)->first();
         $basketProduct->count--;
         if($basketProduct->count < 1)
@@ -71,7 +71,7 @@ class BasketController extends Controller
     }
     public function confirm(BasketRequest $request)
     {       
-            $basket = Basket::where('session_id', session()->getId())->first();
+            $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
             $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
             $basket->update($request->only('name','email','phone'));
             $basket->is_confirmed = 1;
