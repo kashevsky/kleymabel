@@ -39,9 +39,9 @@
             <div class="product_price">
                 {{$category->price}} руб.
             </div>
-            <div class="button_product">
+            <button class="button_product" id="open-modal-btn">
                 Добавить в корзину
-            </div>
+            </button>
             @isset($haracteristics)
                 <div class="haracteristics">
                 <p>Характеристики</p>
@@ -128,4 +128,6 @@
 <div class="main_text">
     {{$category->content}}
 </div>
+<script src="/js/modal.js">
+</script>
 @endsection

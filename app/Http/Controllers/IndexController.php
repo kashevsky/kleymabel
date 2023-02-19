@@ -27,17 +27,18 @@ class IndexController extends Controller
     public function search(Request $request)
     {
         $word = $request->input('word');
-        $allCategories = Category::get();
-        $categories = null;
-        foreach($allCategories as $category)
-        {
-            similar_text($category->title,$word, $per);
-            if(similar_text($category->title,$word, $per)>30)
-            {
-                dump($per);
-                $categories[] = $category;
-            }
-        }
+        $categories = Category::where('title','like','%'.$word.'%')->get();
+        // $allCategories = Category::get();
+        // $categories = null;
+        // foreach($allCategories as $category)
+        // {
+        //     similar_text($category->title,$word, $per);
+        //     if(similar_text($category->title,$word, $per)>30)
+        //     {
+        //         dump($per);
+        //         $categories[] = $category;
+        //     }
+        // }
         return view('searched', compact('categories'));
     }
 }
