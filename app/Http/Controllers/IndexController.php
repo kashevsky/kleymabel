@@ -13,16 +13,18 @@ class IndexController extends Controller
     public function index()
     {
         $categories = Category::get();
-        return view('index', compact('categories'));
+        $menuCategories = $categories->where('show_in_menu',1);
+        return view('index', compact('categories','menuCategories'));
     }
     public function show($slug)
     {
         $categories = Category::get();
+        $menuCategories = $categories->where('show_in_menu',1);
         $category = $categories->where('slug',$slug)->first();
         $products = $category->products()->whereNull('product_id')->get();
         $haracteristics = $category->haracteristics;
         $options = $category->options;
-        return view('category.show', compact('category','categories','products','haracteristics','options'));
+        return view('category.show', compact('category','menuCategories','products','haracteristics','options'));
     }
     public function search(Request $request)
     {

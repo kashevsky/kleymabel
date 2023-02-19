@@ -3,7 +3,7 @@
 <div class="baner">
     <div class="baner_nav">
         <nav>
-            @foreach ($categories as $item)
+            @foreach ($menuCategories as $item)
             <li>
                 <a href="{{route('category.show',$item->slug)}}">
                 <img src="{{$item->icon}}">

@@ -52,6 +52,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.',
             'icon'=>'/images/pallet.svg',
             'icon_black'=>'/images/pallet-black.svg',
+            'show_in_menu'=>1,
         ]);
         Category::create([
             'title'=>'Клейма по дереву',
@@ -77,6 +78,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Металлическое изделие для нанесения отжигов на деревянных изделиях.',
             'icon'=>'/images/wood.svg',
             'icon_black'=>'/images/wood-black.svg',
+            'show_in_menu'=>1,
         ]);
         Category::create([
             'title'=>'Тиснение на коже',
@@ -95,6 +97,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Латунное изделие, позволяющее наносить оттиски на изделиях из кожи',
             'icon'=>'/images/wood.svg',
             'icon_black'=>'',
+            'show_in_menu'=>0,
         ]);
         Category::create([
             'title'=>'Сургучные печати',
@@ -119,6 +122,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Данная печать позволяет наносить оттиск на сургуче',
             'icon'=>'/images/pechati.svg',
             'icon_black'=>'/images/pechati-black.svg',
+            'show_in_menu'=>1,
         ]);
         Category::create([
             'title'=>'Сургуч',
@@ -161,6 +165,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Сургуч',
             'icon'=>'/images/surguch.svg',
             'icon_black'=>'/images/surguch-black.svg',
+            'show_in_menu'=>1,
         ]);
         Category::create([
             'title'=>'Клише для тиснения',
@@ -189,6 +194,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Клише для тиснения',
             'icon'=>'',
             'icon_black'=>'',
+            'show_in_menu'=>0,
         ]);
         Category::create([
             'title'=>'Ударные клейма',
@@ -235,6 +241,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Ударные клейма',
             'icon'=>'/images/hammer.svg',
             'icon_black'=>'/images/hummer-black.svg',
+            'show_in_menu'=>1,
         ]);
         Category::create([
             'title'=>'Клейма для бургеров',
@@ -252,6 +259,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Клейма для бургеров',
             'icon'=>'',
             'icon_black'=>'',
+            'show_in_menu'=>0,
         ]);
         Category::create([
             'title'=>'Нагреватели клейм',
@@ -291,6 +299,7 @@ class CategorySeeder extends Seeder
             'short_desc'=>'Нагреватели для клейм',
             'icon'=>'/images/nagrev.svg',
             'icon_black'=>'/images/temper-black.svg',
+            'show_in_menu'=>1,
         ]);
     }
 }
