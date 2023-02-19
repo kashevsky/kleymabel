@@ -50,6 +50,7 @@
     text-align: start;
     padding-bottom: 2vh;
     font-size: 30px;
+    max-width: 25vw;
 }
 .product_about{
     width: 35vw;

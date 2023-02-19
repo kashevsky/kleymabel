@@ -8,15 +8,13 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('category.show',$category->slug)}}">
-        {{$category->title}}
+        <a href="{{route('category.show',$product->category->slug)}}">
+        {{$product->category->title}}
         </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
-        <a href="{{route('product.show',$product->slug)}}">
         {{$product->title}}
-        </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
@@ -54,6 +52,7 @@
                 <form action="{{route('basket.add-product',$subProduct)}}" method="post">
                     @csrf
                 <input type="submit" value="Добавить в корзину" class="add_to_cart">
+                </form>
             <div class="haracteristics">
             <p>Характеристики</p>
             <table>
@@ -107,4 +106,5 @@
     </div>
 </div>
 </div>
+
 @endsection

@@ -39,9 +39,10 @@
             <div class="product_price">
                 {{$category->price}} руб.
             </div>
-            <button class="button_product" id="open-modal-btn">
-                Добавить в корзину
-            </button>
+            <form action="{{route('basket.add-category',$category)}}" method="post">
+                @csrf
+            <input type="submit" value="Добавить в корзину" class="add_to_cart">
+            </form>
             @isset($haracteristics)
                 <div class="haracteristics">
                 <p>Характеристики</p>

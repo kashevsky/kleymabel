@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\SendMail;
 use App\Models\Basket;
 use App\Models\Product;
+use App\Models\Category;
 use App\Models\SubProduct;
 use Illuminate\Http\Request;
 use App\Models\BasketProduct;
@@ -99,5 +100,28 @@ class BasketController extends Controller
             $data['order'] = $order;
             Mail::to('kashevsky.d@yandex.ru')->send(new SendMail($data));
             return redirect()->route('index');
+    }
+    public function addCategory(Category $product)
+    {
+        $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
+        if(is_null($basket))
+        {
+            $basket = Basket::create([
+                'session_id' => session()->getId(),
+            ]);
+            BasketProduct::create(['title'=> $product->title, 'basket_id'=> $basket->id]);
+            return redirect()->back();
+        }
+        else{
+            $basketProduct = BasketProduct::where('basket_id',$basket->id)->get()->last();
+            if(!is_null($basketProduct) && $basketProduct->title == $product->title)
+            {
+                $basketProduct->count++;
+                $basketProduct->save();
+                return redirect()->back();
+            }
+            BasketProduct::create(['title'=> $product->title, 'basket_id'=> $basket->id]);
+            return redirect()->back();
+        }
     }
 }

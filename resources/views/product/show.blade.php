@@ -21,7 +21,7 @@
 </div>
 <div class="product_container">
     <div class="product_nav">
-        @foreach ($menuCategories as $item )
+        @foreach ($categories as $item )
         <li>
             <a href="{{route('category.show',$item->slug)}}">
             <img src="{{$item->icon_black}}">
