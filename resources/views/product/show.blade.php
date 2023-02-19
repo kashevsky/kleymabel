@@ -48,35 +48,19 @@
                 <form action="{{route('basket.add-product',$product)}}" method="post">
                     @csrf
                 <input type="submit" value="Добавить в корзину" class="add_to_cart">
-            <div class="haracteristics">
-            <p>Характеристики</p>
-            <table>
-                <tr>
-                  <td>Глубина гравировки</td>
-                  <td>1,2 мм</td>
-                </tr>
-                <tr>
-                  <td>Материал</td>
-                  <td>Латунь</td>
-                </tr>
-                <tr>
-                  <td>Ширина основания</td>
-                  <td>14 мм</td>
-                </tr>
-                <tr>
-                    <td>Оснастка</td>
-                    <td>На ручке/паяльнике/термоустановке</td>
-                </tr>
-                <tr>
-                    <td>Форма</td>
-                    <td>По желанию заказчика</td>
-                </tr>
-                <tr>
-                    <td>Гарантия</td>
-                    <td>1 год</td>
-                </tr>
-              </table>
-            </div>
+            @isset($haracteristics)
+                <div class="haracteristics">
+                <p>Характеристики</p>
+                <table>
+                    @foreach ($haracteristics as $haracteristic )
+                    <tr>
+                        <td>{{$haracteristic->parameter}}</td>
+                        <td>{{$haracteristic->value}}</td>
+                    </tr>     
+                    @endforeach 
+                </table>
+                </div>
+            @endisset
             <div class="product_dignities">
                 <div class="product_dignities__item">
                     <li>
@@ -119,5 +103,26 @@
         </div>
     </div>
     @endforeach
+</div>
+<div class="how_to_order">
+    <h3>Как заказать</h3>
+    <div class="how_to_order-flex">
+        <div class="how_to_order__item">
+            <img src="/images/maket.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/redact.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/predoplata.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/zabor.svg">
+            <p></p>
+        </div>
+    </div>
 </div>
 @endsection

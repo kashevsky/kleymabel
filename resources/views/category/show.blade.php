@@ -126,6 +126,27 @@
     </div>
 </div>
 @endisset
+<div class="how_to_order">
+    <h3>Как заказать</h3>
+    <div class="how_to_order-flex">
+        <div class="how_to_order__item">
+            <img src="/images/maket.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/redact.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/predoplata.svg">
+            <p></p>
+        </div>
+        <div class="how_to_order__item">
+            <img src="/images/zabor.svg">
+            <p></p>
+        </div>
+    </div>
+</div>
 <div class="main_text">
     {{$category->content}}
 </div>

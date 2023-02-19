@@ -167,5 +167,21 @@ min-height: 210px;
     width: 50vw;
     background-color: #363636;
 }
+.how_to_order h3{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 30px;
+    color: #363636;
+    padding: 7vh 0;
+}
+.how_to_order-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.how_to_order__item{
+    margin-right: 4vw;
+}
+
 
 /* end about index page */
