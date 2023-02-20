@@ -65,6 +65,10 @@ li{
     margin-right: 1vw;
     color: #363636;
 }
+.header_nav nav a:hover{
+    text-decoration: none;
+    color:#FE201D;
+}
 .header_line{
     margin: 0 -5vw;
 }

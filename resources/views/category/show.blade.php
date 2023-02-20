@@ -28,12 +28,12 @@
         <div class="product">
             <div class="slider">
                 <div class="img">
-                    <a href="img/1.jpg" rel="example_group" id="adpdp14">
+                    <a href="{{$category->preview_image}}" rel="example_group" id="adpdp14">
                     <img src="{{$category->preview_image}}" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
                   </div>
                 @foreach ( $images as $image )
                   <div class="thumbs">
-                    <div class="it"><a style="display:none;" href="img/1.jpg" rel="example_group"></a>
+                    <div class="it"><a style="display:none;" href="{{$image->image}}" rel="example_group"></a>
                         <img src="{{$image->image}}" onclick='setBigImage(this);' alt="" /></div>
                     <div class="clr"></div>
                   </div> 

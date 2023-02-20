@@ -95,7 +95,7 @@ class BasketController extends Controller
             $order = null;
             foreach($basketProducts as $basketProduct)
             {
-                $order .= $basketProduct->title . ', ';
+                $order .= $basketProduct->title . ',';
             }
             $data['order'] = $order;
             Mail::to('kashevsky.d@yandex.ru')->send(new SendMail($data));

@@ -32,6 +32,10 @@
     line-height: 45px;
     color: #363636;
 }
+.product_nav a:hover{
+    color: #FE201D;
+    text-decoration: none;
+}
 .product_nav img{
     margin-right: 10px;
 }
@@ -40,7 +44,7 @@
     color: #363636;
 }
 .slider img{
-    /* width: 25vw; */
+    width: 25vw;
     /* min-width: 300px; */
 }
 .product_info{
@@ -79,6 +83,7 @@
     color: white;
     margin-bottom: 7vh;
     border: none;
+    cursor: pointer;
 }
 .haracteristics p{
     padding-bottom: 20px;
@@ -148,5 +153,8 @@ table {
     text-align: center;
     background-color: #FE201D;
     padding: 5px 10px;
+}
+.sub_product_button:hover{
+    text-decoration: none;
 }
 

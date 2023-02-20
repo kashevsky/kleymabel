@@ -64,10 +64,10 @@
                     </nav>
                 </div>
                 <div class="header_socials">
-                    <a href="">
+                    <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
                         <img src="/images/vk.svg">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
                         <img src="/images/inst.svg">
                     </a>
                 </div>
@@ -93,8 +93,8 @@
                     </div>
                 </div>
                 <div class="socials_column">
-                    <a href=""><img src="/images/vk-white.svg"></a>
-                    <a href=""><img src="/images/inst-white.svg"></a>
+                    <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348"><img src="/images/vk-white.svg"></a>
+                    <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737"><img src="/images/inst-white.svg"></a>
                 </div>
                 <div class="contacts_column">
                     <p>Тел: 8029-676-06-74</p>

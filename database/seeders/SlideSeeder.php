@@ -16,16 +16,24 @@ class SlideSeeder extends Seeder
     public function run()
     {
         Slide::create([
-        'image'=>'http://kleymabel.by/ippc.jpeg',
+        'image'=>'/images/all.jpg',
         'category_id'=>1
         ]);
         Slide::create([
-        'image'=>'http://kleymabel.by/dop-p1.png',
+        'image'=>'/images/dop-p1.png',
         'category_id'=>1
         ]);
         Slide::create([
-        'image'=>'http://kleymabel.by/all.jpg',
+        'image'=>'/images/ippcall.jpg',
         'category_id'=>1
+        ]);
+        Slide::create([
+        'image'=>'/images/ippcall.jpg',
+        'product_id'=>1
+        ]);
+        Slide::create([
+        'image'=>'/images/ippcall.jpg',
+        'product_id'=>1
         ]);
     }
 }

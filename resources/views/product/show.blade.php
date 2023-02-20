@@ -97,6 +97,7 @@
     </div>
 </div>
 </div>
+@if(!$subProducts->isEmpty())
 <div class="product_page_h2">
     <h2>Каталог</h2>
 </div>
@@ -116,6 +117,7 @@
     </div>
     @endforeach
 </div>
+@endif
 <div class="how_to_order">
     <h3>Как заказать</h3>
     <div class="how_to_order-flex">
