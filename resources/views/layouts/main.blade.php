@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="/styles/order.css" />
     <link rel='stylesheet' href='https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css'>
     <link rel='stylesheet' href='https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/fancybox.css" media="screen" />
+    <script type="text/javascript" src="/js/js_jquery.js"></script> 
+    <script type="text/javascript" src="/js/core_ajaxconst.php"></script>
+    <script type="text/javascript" src="/js/jquery.selectbox.js"></script>
+    <script type="text/javascript" src="/js/js_scripts.js"></script>
+    <script type="text/javascript">
+    function setBigImage(foto) {
+      $("#adpdp14").attr('href', $(foto).parent('.it').children('a').attr('href'));
+      document.getElementById("dp14").src = foto.src;
+    }
+  </script>
     <base href="{{URL('/')}}">
 </head>
 <body>

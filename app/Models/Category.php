@@ -25,4 +25,8 @@ class Category extends Model
     {
         return $this->hasMany(CategoryOptions::class,'category_id','id');
     }
+    public function images()
+    {
+        return $this->hasMany(Slide::class,'category_id','id');
+    }
 }

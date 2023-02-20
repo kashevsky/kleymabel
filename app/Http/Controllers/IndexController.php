@@ -24,7 +24,8 @@ class IndexController extends Controller
         $products = $category->products()->whereNull('product_id')->get();
         $haracteristics = $category->haracteristics;
         $options = $category->options;
-        return view('category.show', compact('category','menuCategories','products','haracteristics','options'));
+        $images = $category->images;
+        return view('category.show', compact('category','menuCategories','products','haracteristics','options','images'));
     }
     public function search(Request $request)
     {

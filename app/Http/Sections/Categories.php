@@ -110,7 +110,10 @@ class Categories extends Section implements Initializable
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
-                AdminFormElement::image('preview_image', 'Отображение'),
+                AdminFormElement::image('preview_image', 'Главное изображение'),
+                AdminFormElement::hasMany('images', [
+                    AdminFormElement::image('image','Изображение слайдера'),
+                ]),
                 AdminFormElement::textarea('short_desc','Краткое описание'),
                 AdminFormElement::multiselect('products', 'Вложенные продукты', \App\Models\Product::class)->setDisplay('title'),
                 AdminFormElement::html('<hr>'),

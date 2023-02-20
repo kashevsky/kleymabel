@@ -37,7 +37,19 @@
     <div class="product_section">
         <div class="product">
             <div class="slider">
-                <img src="{{$subProduct->preview_image}}">
+                <div class="img">
+                    <a href="img/1.jpg" rel="example_group" id="adpdp14">
+                    <img src="{{$subProduct->preview_image}}" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
+                  </div>
+                @isset($images)
+                @foreach ( $images as $image )
+                <div class="thumbs">
+                  <div class="it"><a style="display:none;" href="img/1.jpg" rel="example_group"></a>
+                      <img src="{{$image->image}}" onclick='setBigImage(this);' alt="" /></div>
+                  <div class="clr"></div>
+                </div> 
+              @endforeach
+              @endisset
             </div>
             <div class="product_info">
             <div class="product_title">

@@ -40,8 +40,8 @@
     color: #363636;
 }
 .slider img{
-    width: 25vw;
-    min-width: 300px;
+    /* width: 25vw; */
+    /* min-width: 300px; */
 }
 .product_info{
     padding-left: 5vw;

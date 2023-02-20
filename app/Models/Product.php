@@ -32,4 +32,8 @@ class Product extends Model
     {
         return $this->hasMany(Haracteristics::class, 'product_id','id');
     }
+    public function images()
+    {
+        return $this->hasMany(Slide::class,'product_id','id');
+    }
 }
