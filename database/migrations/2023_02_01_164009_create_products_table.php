@@ -17,7 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
+            $table->string('short_desc')->nullable();
             $table->string('preview_image')->nullable();
+            $table->string('main_image')->nullable();
             $table->text('content')->nullable();
             $table->float('price')->nullable();
             $table->string('slug')->nullable();

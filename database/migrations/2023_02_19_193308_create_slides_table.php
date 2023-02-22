@@ -22,6 +22,8 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id')->nullable();
             $table->index('product_id');
             $table->foreign('product_id')->on('products')->references('id')->onDelete('cascade');
+            $table->string('alt')->nullable();
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

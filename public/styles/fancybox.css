@@ -22,10 +22,13 @@
 #fancybox-left:hover span{left:20px;}
 #fancybox-right:hover span{left:auto;right:20px;}
 
-.img img{width:21vw; height: 40vh; }
+.img img{width:25vw; height: 50vh; }
 .it img {width:6vw; height: 11vh; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px;}
 .it img:hover {border: 1px solid #000; cursor:pointer}
 @media only screen and (min-width : 320px) and (max-width : 479px) {
-.img img{width:100vw; height: 50vh; }
-.it img {width:25vw; height: 13vh; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
+.img img{width:100vw; height: 45vh; }
+.it img {width:25vw; height: 11vh; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
+#fancybox-img{width: 100vw; padding: 20px;}
+#fancybox-wrap{width: 100vw; height: 100vh;}
+
 }

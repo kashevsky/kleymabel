@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->string('preview_image')->nullable();
+            $table->string('alt_main_image')->nullable();
+            $table->string('title_main_image')->nullable();
+            $table->string('main_image')->nullable();
             $table->text('content')->nullable();
             $table->float('price')->nullable();
             $table->string('engraving_depth')->nullable();

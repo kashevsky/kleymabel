@@ -34,13 +34,13 @@
         <div class="product">
             <div class="slider">
                 <div class="img">
-                    <a href="img/1.jpg" rel="example_group" id="adpdp14">
-                    <img src="{{$product->preview_image}}" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
+                    <a href="{{$product->main_image}}" rel="example_group" id="adpdp14">
+                    <img src="{{$product->main_image}}" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
                   </div>
                 @isset($images)
                 @foreach ( $images as $image )
                 <div class="thumbs">
-                  <div class="it"><a style="display:none;" href="img/1.jpg" rel="example_group"></a>
+                  <div class="it"><a style="display:none;" href="{{$image->image}}" rel="example_group"></a>
                       <img src="{{$image->image}}" onclick='setBigImage(this);' alt="" /></div>
                   <div class="clr"></div>
                 </div> 
@@ -52,7 +52,7 @@
                 <h1>{{$product->title}}</h1>
             </div>
             <div class="product_about">
-                Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
+                {{$product->short_desc}}
             </div>
             <div class="product_price">
                 {{$product->price}} руб.

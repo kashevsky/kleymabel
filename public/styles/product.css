@@ -132,11 +132,13 @@ table {
     background: white;
     margin-bottom: 10vh;
     margin-left: 2vw;
-    padding: 2vh 2vw;
+    padding: 2vh 2vw 4vh 2vw;
     width: 20vw;
+    height: 50vh;
 }
 .sub_products__item img{
     width: 20vw;
+    height: 38vh;
 }
 .sub_products__item h2{
     text-align: center;

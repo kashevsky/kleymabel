@@ -56,7 +56,7 @@
                 <h1>{{$subProduct->title}}</h1>
             </div>
             <div class="product_about">
-                Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
+                {{$subProduct->short_desc}}
             </div>
             <div class="product_price">
                 {{$subProduct->price}} руб.

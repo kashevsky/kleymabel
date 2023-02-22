@@ -34,13 +34,13 @@
         <div class="product">
             <div class="slider">
                 <div class="img">
-                    <a href="{{$category->preview_image}}" rel="example_group" id="adpdp14">
-                    <img src="{{$category->preview_image}}" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
+                    <a href="{{$category->main_image}}" rel="example_group" id="adpdp14">
+                    <img src="{{$category->main_image}}" id="dp14" style="margin-bottom: 3px;" alt="{{$category->alt_main_image}}" title="{{$category->title_main_image}}" /></a>
                   </div>
                 @foreach ( $images as $image )
                   <div class="thumbs">
                     <div class="it"><a style="display:none;" href="{{$image->image}}" rel="example_group"></a>
-                        <img src="{{$image->image}}" onclick='setBigImage(this);' alt="" /></div>
+                        <img src="{{$image->image}}" onclick='setBigImage(this);' alt="{{$image->alt}}" title="{{$image->title}}" /></div>
                     <div class="clr"></div>
                   </div> 
                 @endforeach
@@ -50,7 +50,7 @@
                 <h1>{{$category->title}}</h1>
             </div>
             <div class="product_about">
-                Металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет.
+                {{$category->short_desc}}
             </div>
             <div class="product_price">
                 {{$category->price}} руб.
@@ -164,7 +164,7 @@
     </div>
 </div>
 <div class="main_text">
-    {{$category->content}}
+    {!! html_entity_decode($category->content) !!}
 </div>
 <script src="/js/modal.js">
 </script>
