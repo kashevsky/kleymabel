@@ -17,6 +17,7 @@
     font-family: 'Montserrat';
     background: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 7vh;
     color: #363636;
@@ -41,6 +42,7 @@
 }
 .product{
     display: flex;
+    flex-wrap: wrap;
     color: #363636;
 }
 .slider img{
@@ -98,7 +100,7 @@ table {
     padding: 6px 40px 2px 10px ;
 }
 .product_dignities{
-    padding: 5vh 0;
+    padding: 5vh 0 8vh 0;
 }
 .product_dignities li{
     display: flex;
@@ -156,5 +158,68 @@ table {
 }
 .sub_product_button:hover{
     text-decoration: none;
+}
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+    html, body {
+        overflow-x: hidden !important;
+        box-sizing: border-box;
+      }
+    .bread_crumbs__item{
+        margin: 0 2vw;
+    }
+    .slider{
+        margin: 1px auto;
+        padding-bottom: 5vh;
+    }
+    .haracteristics{
+        width: 20vw;
+    }
+    .product_title h1{
+        min-width: 100vw;
+    }
+    .product_page_h2 h2{
+        padding: 5vh 0;
+       }
+    .product_about{
+        width: 100vw;
+        font-size: 16px;
+    }
+    .product_price{
+        font-size: 25px;
+        padding: 1vh 0 4vh 0;
+    }
+    .add_to_cart{
+        width: 60vw;
+        font-size: 18px;
+    }
+    .sub_products__item{
+        width: 90vw;
+    }
+    .sub_products__item img{
+        width: 90vw;
+    }
+    .price{
+        font-size: 28px;
+    }
+    .sub_product_button{
+        width: 30vw;
+        padding: 1vh 0;
+    }
+    .product_container{
+        padding: 0 2vw;   
+    }
+    .product_dignities{
+        font-size: 18px;
+    }
+    .product_dignities img{
+        margin-right: 15px;
+    }
+    .how_to_order{
+        display: none;
+        border:1px solid red;
+    }
+    .footer_container{
+        display: none;
+    }
 }
 

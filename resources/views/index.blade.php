@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title')
+@endsection
 @section('content')
 <div class="baner">
     <div class="baner_nav">
@@ -13,6 +15,18 @@
             @endforeach
         </nav>
     </div>
+</div>
+<div class="mobile_nav">
+    <nav>
+        @foreach ($menuCategories as $item)
+        <li>
+            <a href="{{route('category.show',$item->slug)}}">
+            <img src="{{$item->icon_black}}">
+            <p>{{$item->title}}</p>
+            </a>
+        </li>
+        @endforeach
+    </nav>
 </div>
 <div class="catalog_section">
     <h1>Изготовление клейм</h1>

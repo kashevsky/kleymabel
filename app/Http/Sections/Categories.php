@@ -103,6 +103,7 @@ class Categories extends Section implements Initializable
                 AdminFormElement::text('title', 'Заголовок')
                     ->required()
                 ,
+                AdminFormElement::text('slug','URL-адрес (НЕ МЕНЯТЬ)'),
                 AdminFormElement::text('description', 'Описание')
                 ->required()
                 ,

@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('meta_title')
+{{$category->title}}
+@endsection
+@section('meta_descroption')
+{{$category->description}}
+@endsection
 @section('content')
 <div class="bread_crumbs">
     <div class="bread_crumbs__item">

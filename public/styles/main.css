@@ -41,7 +41,11 @@ li{
     background-repeat: no-repeat;
     background-position: left;
     width: 15vw;
-    padding: 3px 0 0 25px;
+    padding: 7px 0 0 25px;
+    border: none;
+}
+.input_flex{
+    display: flex;
 }
 .search_button{
     all: unset;
@@ -49,8 +53,8 @@ li{
     font-size: 14px;
     padding: 3.9px 10px;
     margin-left: -11.1px;
-    position: relative;
-    top: -3px;
+    /* position: relative;
+    top: -3.3px; */
 }
 .header_container_line{
     display: flex;
@@ -58,8 +62,62 @@ li{
     justify-content: space-around;
     padding: 3vh 4vw;
 }
+.header_icons{
+    display: flex;
+    justify-content: center;
+}
 .header_socials a{
-    padding-left: 0.5vw;
+    margin-left: 0.5vw;
+}
+.header_line{
+    padding: 0 2vw;
+}
+.burger-menu{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 70vw;
+    z-index: 1;
+    background-color: white;
+    color: #343434;
+}
+.mobile-menu a{
+    color: #343434;
+}
+.mobile-menu nav{
+    padding: 20px 0;
+}
+.mobile-menu .nav li{
+    margin: 0 0 20px 20px;
+    font-size: 16px;
+}
+.mobile-basket{
+    padding: 10px 20px;
+}
+.mobile-menu__item{
+    display: flex;
+    margin: 10px 6px;
+}
+.mobile-menu__item img{
+    display: flex;
+    margin-right: 10px;
+}
+#burger, [for=burger]
+{
+    display: none;
+}
+#burger:checked + label + .mobile-menu{
+    display: block;
+}
+#burger:checked +[for=burger]::before{
+    content: url('../images/close.svg');
+}
+.mobile-menu{
+    margin-bottom: 10vh;
 }
 .header_nav nav a{
     margin-right: 1vw;
@@ -68,9 +126,6 @@ li{
 .header_nav nav a:hover{
     text-decoration: none;
     color:#FE201D;
-}
-.header_line{
-    margin: 0 -5vw;
 }
 .footer_container{
     background: #343434;
@@ -84,4 +139,30 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+[for=burger]
+{
+    display: block;
+}
+[for=burger]::before
+{
+    content: url('../images/burger.svg');
+}
+.burger-menu{
+   display: block;
+}
+.header_container_line--gray{
+    display: none;
+}
+.header_logo img{
+    width: 60vw;
+}
+.header_nav{
+    display: none;
+}
+.header_socials{
+    display: none;
+}
 }

@@ -115,9 +115,12 @@ min-height: 210px;
 .advantages{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .advantages__item p{
     text-align: center;
+    margin-top: 2vh;
+    font-weight: bold;
 }
 .options{
     background-color: #F7F7F7;
@@ -129,6 +132,7 @@ min-height: 210px;
     text-align: center;
     font-size: 30px;
     margin-bottom: 9vh;
+    padding-top: 9vh;
 }
 .options_row{
     display: flex;
@@ -139,6 +143,7 @@ min-height: 210px;
 .options_item{
     width: 35vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: white;
     margin-left: 4vw;
@@ -150,9 +155,11 @@ min-height: 210px;
 }
 .options_text{
     padding: 0 2vw;
+    width: 16vw;
 }
 .options_text h3{
     margin-bottom: 2vh;
+    font-size: 16px;
 }
 .main_text{
     padding: 10vh 15vw;
@@ -191,6 +198,99 @@ min-height: 210px;
 .how_to_order__item{
     margin-right: 4vw;
 }
-
-
+.mobile_nav{
+    display: none;
+}
 /* end about index page */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+.baner{
+    background-image: url('../images/imagebaner.svg');
+    background-position: center;
+    background-size: cover;    
+    width: 100%;
+    height: 26vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.baner nav{
+    display: none;
+}
+.mobile_nav{
+    padding: 5vh 8vw;
+    display: block;
+}
+.mobile_nav nav li a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    color:#363636;
+    display: flex;
+}
+.mobile_nav nav img{
+    margin-right: 10px;
+}
+.baner_nav nav li a:hover{
+    color: #FE201D;
+    text-decoration: none;
+}
+.catalog_section h1{
+padding: 5vh 0;
+}
+.catalog{
+    padding: 0 0;  
+}
+.catalog__item{
+    width: 100vw;
+    margin-bottom: 4vh;
+}
+.catalog__item img{
+    width: 100vw;
+    margin: 1px auto;
+}
+.catalog__item h2{
+    width: 100vw;
+}
+.product_nav{
+    display: none;
+}
+.options_item{
+    width: 100vw;
+    margin-bottom: 4vh;
+}
+.options_item img{
+    margin: 1px auto;
+    width: 100vw;
+}
+.options_text{
+    width: 95vw;
+}
+.main_text{
+    padding: 10vh 6vw;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 170.5%
+}
+.about_section
+{
+    background: white;
+    width: 100vw;
+    padding: 5vh 2vw 2vh 0;
+    font-family: 'Montserrat';
+}
+.about_title
+{
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
+    width: 100vw;
+    color: #363636;
+}
+.about_section__text{
+    padding: 0 0 5vh 0;
+    text-align: center;
+}
+.advantages__item{
+    margin: 2vh 4vw;
+}
+}

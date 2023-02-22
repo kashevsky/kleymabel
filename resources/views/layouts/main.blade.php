@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>@yield('meta_title')</title>
+    <meta name="description" content="@yield('meta_descroption')">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500;1,600&display=swap" rel="stylesheet">
@@ -42,16 +44,65 @@
                 <div class="header_search">
                     <form action="{{route('search')}}" method="post">
                     @csrf
+                    <div class="input_flex">
                     <input class="input_search" name="word">
                     <label for="input_saerch">&nbsp;</label>
                     <input type="submit" value="Поиск" class="search_button">
+                    </div>
                     </form>
                 </div>
             </div>
             <div class="header_container_line">
+                <div class="burger-menu">
+                    <input type="checkbox" id="burger">
+                    <label for="burger"></label>
+                    <div class="mobile-menu">
+                        <div class="nav">
+                            <div class="mobile-basket">
+                                <a href="{{route('basket.show')}}">
+                                    <img src="/images/basket.svg">
+                                </a>
+                            </div>
+                            <hr>
+                            <nav>
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Каталог</a></li>
+                                <li><a href="">Портфолио</a></li>
+                                <li><a href="">Доставка</a></li>
+                                <li><a href="">Оплата</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </nav>
+                            <hr>
+                            <div class="mobile-menu__item">
+                                <img src="/images/menu-phone.svg">
+                                <p>8029-676-06-74</p>
+                            </div>
+                            <div class="mobile-menu__item">
+                                <img src="/images/menu-email.svg">
+                                <p>kleymabel@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="mobile-menu">
+        <div class="nav">
+            <nav>
+                <li><a href="">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Портфолио</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Контакты</a></li>
+            </nav>
+        </div>
+    </div>
+                <a href="{{route('index')}}">
                 <div class="header_logo">
                     <img src="/images/logo.svg">
                 </div>
+                </a>
                 <div class="header_nav">
                     <nav>
                         <a href="">Главная</a>
@@ -63,21 +114,23 @@
                         <a href="">Контакты</a>
                     </nav>
                 </div>
-                <div class="header_socials">
-                    <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
-                        <img src="/images/vk.svg">
-                    </a>
-                    <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
-                        <img src="/images/inst.svg">
-                    </a>
-                </div>
-                <div class="header_line">
-                    <img src="/images/line.svg">
-                </div>
-                <div class="basket">
-                    <a href="{{route('basket.show')}}">
-                        <img src="/images/basket.svg">
-                    </a>
+                <div class="header_icons">
+                    <div class="header_socials">
+                        <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
+                            <img src="/images/vk.svg">
+                        </a>
+                        <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
+                            <img src="/images/inst.svg">
+                        </a>
+                    </div>
+                    <div class="header_line">
+                        <img src="/images/line.svg">
+                    </div>
+                    <div class="basket">
+                        <a href="{{route('basket.show')}}">
+                            <img src="/images/basket.svg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -29,7 +29,6 @@ justify-content: center;
 .basket-form{
     margin-top: 5vh;
     text-align: center;
-
 }
 .basket-form input{
     width: 20vw;
@@ -46,4 +45,17 @@ justify-content: center;
     text-align: center;
     margin-top: 3vh;
     border: none;
+}
+.basket_button{
+    background-color: red;
+    font-size: 16px;
+    margin-top: 3vh;
+    
+}
+.basket_button a{
+    color: white;
+    padding: 2vh 3vw;
+}
+.basket_button a:hover{
+    text-decoration: none;
 }

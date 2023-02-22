@@ -99,6 +99,7 @@ class Products extends Section implements Initializable
                 AdminFormElement::html('Данные для СЕО'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::text('title', 'Заголовок'),
+                AdminFormElement::text('slug', 'URL-адрес(НЕ МЕНЯТЬ)'),
                 AdminFormElement::text('description', 'Описание'),
                 AdminFormElement::html('Расположение в каталоге'),
                 // AdminFormElement::select('category_id', 'Выбор категории')->setModelForOptions(\App\Models\Category::class),

@@ -1,21 +1,7 @@
 @extends('layouts.main')
 @section('content')
-<div class="baner">
-    <div class="baner_nav">
-        <nav>
-            @foreach ($categories as $item)
-            <li>
-                <a href="{{route('category.show',$item->slug)}}">
-                <img src="{{$item->icon}}">
-                <p>{{$item->title}}</p>
-                </a>
-            </li>
-            @endforeach
-        </nav>
-    </div>
-</div>
 <div class="catalog_section">
-    <h1>Изготовление клейм</h1>
+    <h1>Результаты поиска</h1>
     <div class="catalog">
         @foreach ($categories as $category )
         <div class="catalog__item">
