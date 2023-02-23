@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Models\MainPortfolio;
 use App\Models\CategoryOptions;
 use App\Models\CategoryHaracteristics;
 
@@ -14,7 +15,8 @@ class IndexController extends Controller
     {
         $categories = Category::get();
         $menuCategories = $categories->where('show_in_menu',1);
-        return view('index', compact('categories','menuCategories'));
+        $portfolio = MainPortfolio::get();
+        return view('index', compact('categories','menuCategories','portfolio'));
     }
     public function show($slug)
     {

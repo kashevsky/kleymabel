@@ -166,3 +166,28 @@ li{
     display: none;
 }
 }
+@media (min-width: 430px) and (max-width: 1199.98px) { 
+    [for=burger]
+{
+    display: block;
+}
+[for=burger]::before
+{
+    content: url('../images/burger.svg');
+}
+.burger-menu{
+   display: block;
+}
+.header_container_line--gray{
+    display: none;
+}
+.header_logo img{
+    width: 20vw;
+}
+.header_nav{
+    display: none;
+}
+.header_socials{
+    display: none;
+}
+}

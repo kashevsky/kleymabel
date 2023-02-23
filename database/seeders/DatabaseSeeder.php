@@ -28,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call([HaracteristicsSeeder::class]);
         $this->call([CategoryOptionsSeeder::class]);
         $this->call([SlideSeeder::class]);
+        $this->call([MainPortfolioSeeder::class]);
     }
 }

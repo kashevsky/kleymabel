@@ -73,4 +73,14 @@
         </div>
     </div>
 </div>
+<div class="portfolio_container">
+        <h2>Портфолио клейм</h2>
+    <div class="portfolio">
+        @foreach ($portfolio as $item )
+        <div class="portfolio__item">
+            <img src="{{$item->image}}" alt="{{$item->alt}}" title="{{$item->title}}">
+        </div>
+        @endforeach
+    </div>
+</div>
 @endsection

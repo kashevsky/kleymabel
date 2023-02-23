@@ -30,5 +30,10 @@
 .it img {width:25vw; height: 11vh; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
 #fancybox-img{width: 100vw; padding: 20px;}
 #fancybox-wrap{width: 100vw; height: 100vh;}
-
+}
+@media (min-width: 430px) and (max-width: 1199.98px) { 
+    .img img{width:600px; height: 600px; }
+    .it img {width:120px; height: 100px; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
+    #fancybox-img{width: 100vw; padding: 20px;}
+    #fancybox-wrap{width: 100vw; height: 100vh;}
 }

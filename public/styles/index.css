@@ -206,6 +206,30 @@ min-height: 210px;
 .mobile_nav{
     display: none;
 }
+.portfolio_container{
+    background-color: #F7F7F7;
+    padding-top: 5vh;
+}
+.portfolio_container h2{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 40px;
+    color: #363636;
+    font-weight: normal;
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 10vw;
+}
+.portfolio__item{
+    margin: 0 1vw 1vh 0;
+}
+.portfolio__item img{
+    width: 20vw;
+}
 /* end about index page */
 @media only screen and (min-width : 320px) and (max-width : 479px) {
 .baner{
@@ -298,4 +322,9 @@ padding: 5vh 0;
 .advantages__item{
     margin: 2vh 4vw;
 }
+}
+@media (min-width: 430px) and (max-width: 1199.98px) { 
+    .catalog__item{
+        width: 500px;
+    }
 }
