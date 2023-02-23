@@ -139,6 +139,11 @@ class Categories extends Section implements Initializable
                 ]),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::file('video','Видеозапись'),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::html('Изображения для портфолио'),
+                AdminFormElement::hasMany('portfolio', [
+                    AdminFormElement::image('image','Изображение для портфолио'),
+                ]),
             ], 'col-xs-12 col-sm-6 col-md-4 col-lg-12')
         ]);
 

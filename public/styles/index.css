@@ -226,6 +226,7 @@ min-height: 210px;
 }
 .portfolio__item{
     margin: 0 1vw 1vh 0;
+    border: 1px solid gold;
 }
 .portfolio__item img{
     width: 20vw;

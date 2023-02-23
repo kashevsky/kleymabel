@@ -20,7 +20,7 @@ class SlideSeeder extends Seeder
         'category_id'=>1
         ]);
         Slide::create([
-        'image'=>'/images/dop-p1.png',
+        'image'=>'/images/ippc.jpeg',
         'category_id'=>1
         ]);
         Slide::create([

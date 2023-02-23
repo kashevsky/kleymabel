@@ -4,8 +4,9 @@ namespace App\Models;
 
 use App\Models\Product;
 use App\Models\Category;
-use App\Models\CategoryOptions;
 use App\Models\Haracteristics;
+use App\Models\CategoryOptions;
+use App\Models\CategoryPortfolio;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -28,5 +29,9 @@ class Category extends Model
     public function images()
     {
         return $this->hasMany(Slide::class,'category_id','id');
+    }
+    public function portfolio()
+    {
+        return $this->hasMany(CategoryPortfolio::class,'category_id','id');
     }
 }

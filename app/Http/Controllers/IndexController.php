@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\MainPortfolio;
 use App\Models\CategoryOptions;
+use App\Models\CategoryPortfolio;
 use App\Models\CategoryHaracteristics;
 
 class IndexController extends Controller
@@ -27,7 +28,8 @@ class IndexController extends Controller
         $haracteristics = $category->haracteristics;
         $options = $category->options;
         $images = $category->images;
-        return view('category.show', compact('category','menuCategories','products','haracteristics','options','images'));
+        $portfolio = $category->portfolio;
+        return view('category.show', compact('category','menuCategories','products','haracteristics','options','images','portfolio'));
     }
     public function search(Request $request)
     {

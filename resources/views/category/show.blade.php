@@ -166,6 +166,16 @@
 <div class="main_text">
     {!! html_entity_decode($category->content) !!}
 </div>
-<script src="/js/modal.js">
-</script>
+@if(!$portfolio->isEmpty())
+<div class="portfolio_container">
+    <h2>Портфолио клейм</h2>
+<div class="portfolio">
+    @foreach ($portfolio as $item )
+    <div class="portfolio__item">
+        <img src="{{$item->image}}" alt="{{$item->alt}}" title="{{$item->title}}">
+    </div>
+    @endforeach
+</div>
+</div>
+@endif
 @endsection
