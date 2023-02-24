@@ -100,15 +100,12 @@ class Categories extends Section implements Initializable
             AdminFormElement::columns()->addColumn([
                 AdminFormElement::html('Данные для СЕО'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::text('title', 'Заголовок')
-                    ->required()
-                ,
+                AdminFormElement::text('meta_title', 'Title'),
                 AdminFormElement::text('slug','URL-адрес (НЕ МЕНЯТЬ)'),
-                AdminFormElement::text('description', 'Описание')
-                ->required()
-                ,
+                AdminFormElement::text('description', 'Описание'),
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
+                AdminFormElement::text('title', 'Заголовок'),
                 AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
                 AdminFormElement::image('preview_image', 'Превью (отображение в каталоге)'),

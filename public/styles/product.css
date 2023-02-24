@@ -161,6 +161,9 @@ table {
 .sub_product_button:hover{
     text-decoration: none;
 }
+.how_to_order-mobile{
+    display: none;
+}
 @media only screen and (min-width : 320px) and (max-width : 479px) {
     html, body {
         overflow-x: hidden !important;
@@ -196,9 +199,11 @@ table {
     }
     .sub_products__item{
         width: 90vw;
+        height: 65vh;
     }
     .sub_products__item img{
         width: 90vw;
+        height: 50vh;
     }
     .price{
         font-size: 28px;
@@ -216,12 +221,26 @@ table {
     .product_dignities img{
         margin-right: 15px;
     }
-    .how_to_order{
+    .how_to_order img{
         display: none;
-        border:1px solid red;
+    }
+    .how_to_order-mobile{
+        display: block;
+    }
+    .socials_column{
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        padding: 2vh 0;
+    }
+    .contacts_column p{
+        padding: 1vh 0;
+    }
+    .contacts_column{
+        padding-bottom: 4vh;
     }
     .footer_container{
-        display: none;
+        margin-top: 10vh;
     }
 }
 

@@ -33,10 +33,12 @@
         <div class="header_container">
             <div class="header_container_line--gray">
                 <div class="header_contacts">
-                    <div class="header_contacts__item">
-                        <img src="/images/phone.svg">
-                        <p>8029-676-06-74</p>
-                    </div>
+                    <a class="call" href="tel:+375 (29) 676-06-74">
+                        <div class="header_contacts__item">
+                                <img src="/images/phone.svg">
+                                <p>8029-676-06-74</p>
+                        </div>
+                    </a>
                     <div class="header_contacts__item">
                         <img src="/images/email.svg">
                         <p>kleymabel@mail.ru</p>
@@ -66,10 +68,10 @@
                             </div>
                             <hr>
                             <nav>
-                                <li><a href="">Главная</a></li>
-                                <li><a href="">О нас</a></li>
-                                <li><a href="">Каталог</a></li>
-                                <li><a href="">Портфолио</a></li>
+                                <li><a href="{{route('index')}}">Главная</a></li>
+                                <li><a href="#about">О нас</a></li>
+                                <li><a href="#catalog">Каталог</a></li>
+                                <li><a href="#portfolio">Портфолио</a></li>
                                 <li><a href="">Доставка</a></li>
                                 <li><a href="">Оплата</a></li>
                                 <li><a href="">Контакты</a></li>
@@ -90,9 +92,9 @@
         <div class="nav">
             <nav>
                 <li><a href="">Главная</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Портфолио</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
                 <li><a href="">Доставка</a></li>
                 <li><a href="">Оплата</a></li>
                 <li><a href="">Контакты</a></li>
@@ -107,9 +109,9 @@
                 <div class="header_nav">
                     <nav>
                         <a href="">Главная</a>
-                        <a href="">О нас</a>
-                        <a href="">Каталог</a>
-                        <a href="">Портфолио</a>
+                        <a href="#about">О нас</a>
+                        <a href="#catalog">Каталог</a>
+                        <a href="#portfolio">Портфолио</a>
                         <a href="">Доставка</a>
                         <a href="">Оплата</a>
                         <a href="">Контакты</a>
@@ -122,6 +124,11 @@
                         </a>
                         <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
                             <img src="/images/inst.svg">
+                        </a>
+                    </div>
+                    <div class="mobile-phone">
+                        <a href="tel:+375 (29) 676-06-74">
+                        <img src="/images/m-phone.svg">
                         </a>
                     </div>
                     <div class="header_line">

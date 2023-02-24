@@ -28,6 +28,14 @@ class SlideSeeder extends Seeder
         'category_id'=>1
         ]);
         Slide::create([
+            'image'=>'/images/termo.jpg',
+            'category_id'=>1
+        ]);
+        Slide::create([
+            'image'=>'/images/eur.png',
+            'category_id'=>1
+        ]);
+        Slide::create([
             'image'=>'/images/lode.jpg',
             'category_id'=>2
         ]);
@@ -37,6 +45,18 @@ class SlideSeeder extends Seeder
         ]);
         Slide::create([
             'image'=>'/images/madbull.jpg',
+            'category_id'=>2
+        ]);
+        Slide::create([
+            'image'=>'/images/drv1.jpg',
+            'category_id'=>2
+        ]);
+        Slide::create([
+            'image'=>'/images/knp.jpg',
+            'category_id'=>2
+        ]);
+        Slide::create([
+            'image'=>'/images/rs.jpg',
             'category_id'=>2
         ]);
         Slide::create([
@@ -52,6 +72,22 @@ class SlideSeeder extends Seeder
             'category_id'=>3
         ]);
         Slide::create([
+            'image'=>'/images/dop-k3.jpg',
+            'category_id'=>3
+        ]);
+        Slide::create([
+            'image'=>'/images/kzg2.jpg',
+            'category_id'=>3
+        ]);
+        Slide::create([
+            'image'=>'/images/dop-k4.png',
+            'category_id'=>3
+        ]);
+        Slide::create([
+            'image'=>'/images/po_kozge_main.jpg',
+            'category_id'=>3
+        ]);
+        Slide::create([
             'image'=>'/images/ppp2.jpg',
             'category_id'=>4
         ]);
@@ -61,6 +97,14 @@ class SlideSeeder extends Seeder
         ]);
         Slide::create([
             'image'=>'/images/ppp3.jpg',
+            'category_id'=>4
+        ]);
+        Slide::create([
+            'image'=>'/images/dop-s1.jpg',
+            'category_id'=>4
+        ]);
+        Slide::create([
+            'image'=>'/images/dop-s2.jpg',
             'category_id'=>4
         ]);
         Slide::create([
@@ -88,6 +132,10 @@ class SlideSeeder extends Seeder
             'category_id'=>9
         ]);
         Slide::create([
+            'image'=>'/images/nagm.jpg',
+            'category_id'=>9
+        ]);
+        Slide::create([
             'image'=>'/images/termo.jpg',
             'category_id'=>9
         ]);
@@ -96,12 +144,28 @@ class SlideSeeder extends Seeder
             'category_id'=>10
         ]);
         Slide::create([
-        'image'=>'/images/ippcall.jpg',
-        'product_id'=>1
+            'image'=>'/images/ippc_1.jpg',
+            'product_id'=>1
+        ]);
+        Slide::create([
+            'image'=>'/images/ippc2.jpg',
+            'product_id'=>1
+        ]);
+        Slide::create([
+            'image'=>'/images/eur_1.jpg',
+            'product_id'=>2
+        ]);
+        Slide::create([
+        'image'=>'/images/nbr1.jpeg',
+        'product_id'=>3
+        ]);
+        Slide::create([
+        'image'=>'/images/nbr3.jpeg',
+        'product_id'=>3
         ]);
         Slide::create([
         'image'=>'/images/ippcall.jpg',
-        'product_id'=>1
+        'product_id'=>3
         ]);
     }
 }

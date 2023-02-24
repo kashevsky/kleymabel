@@ -17,7 +17,8 @@ class ProductSeeder extends Seeder
     {
         Product::create([
             'title'=>'Клеймо для поддонов IPPC',
-            'description'=>'Клеймо для поддонов IPPC',
+            'meta_title'=>'Клеймо фитосанитарное IPPC для паллет и поддонов заказать в Минске',
+            'description'=>'Производство фитосанитарных клейм для паллет под заказ в Минске. Фумигационные штампы всех видов и размеров, нагреватели клише. Доставка по Беларусии.',
             'preview_image'=>'images/ippc.jpeg',
             'main_image'=>'images/ippc.jpeg',
             'content'=>'',
@@ -28,7 +29,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для поддонов EUR',
-            'description'=>'Клеймо для поддонов EUR',
+            'meta_title'=>'Клеймо для европоддонов и паллет EUR заказать в Минске',
+            'description'=>'Производство клейм для европоддонов EUR. Штампы и клише для выжигания на паллетах Евро под заказ на ручках или электрических нагревателях.',
             'preview_image'=>'images/eur.png',
             'main_image'=>'images/eur.png',
             'content'=>'Знак «EUR» на поддоне означает, что данное изделие произведено в Европе и соответствует всем европейским стандартам. Отжиг «EUR» на паллетах обязателен, если необходимо отправлять продукцию в европейские страны. Без данного знака экспорт осуществить невозможно.
@@ -50,7 +52,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо IPPC (номер партии, дата)',
-            'description'=>'Клеймо IPPC (номер партии, дата)',
+            'meta_title'=>'Фитосанитарное клеймо (номер партии , дата) заказать в Минске',
+            'description'=>'Производство фитосанитарных клейм с номером партии и датой в Минске. IPPC клейма всех видов и размеров.',
             'preview_image'=>'/images/nbr2.jpeg',
             'main_image'=>'/images/nbr2.jpeg',
             'content'=>'Фитосанитарное клеймо (IPPC) - размер 80х70мм включает в себя комплект сменных символов.
@@ -68,7 +71,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для поддонов UIC',
-            'description'=>'Клеймо для поддонов UIC',
+            'meta_title'=>'Клеймо для поддонов и европоддонов UIC',
+            'description'=>'Заказать клеймо для паллет UIC в Минске. Варианты нагрева: ручка, электрический нагреватель.',
             'preview_image'=>'/images/UIC.jpg',
             'main_image'=>'/images/UIC.jpg',
             'content'=>'',
@@ -78,7 +82,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 40х70',
-            'description'=>'Фитосанитарный штамп для поддонов IPPC 40х70',
+            'meta_title'=>'Клеймо IPPC размер 40х70 мм',
+            'description'=>'Клеймо фумигационное для поддонов размером 4 х 7 СМ. Изготовление под заказ в течение 3 дней, материал: латунь.',
             'preview_image'=>'/images/ippc4070ht.png',
             'main_image'=>'/images/ippc4070ht.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
@@ -88,7 +93,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 55х60',
-            'description'=>'Фитосанитарный штамп для поддонов IPPC 55х60',
+            'meta_title'=>'Фитосанитарный штамп размером 55х60 мм',
+            'description'=>'Фитосанитарный штамп типа IPPC размером 5х6 СМ. Предназначен для клеймения паллет. Оснащается ручкой или электрическим нагревателем.',
             'preview_image'=>'/images/ippc4070ht.png',
             'main_image'=>'/images/ippc4070ht.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
@@ -98,7 +104,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 55х80',
-            'description'=>'Фитосанитарный штамп для поддонов IPPC 55х80',
+            'meta_title'=>'Штамп для клеймения поддонов размером 55х80 мм',
+            'description'=>'Латунный штамп IPPC размером 55 х 80 мм. Используется для нанесения отжигов на поддоны. Изготавливается под заказ.',
             'preview_image'=>'/images/ippc5580.png',
             'main_image'=>'/images/ippc5580.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
@@ -108,7 +115,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Фитосанитарный штамп для поддонов IPPC 70х80',
-            'description'=>'Фитосанитарный штамп для поддонов IPPC 70х80',
+            'meta_title'=>'Клише из латуни фимигационное IPPC 7х8 СМ',
+            'description'=>'Металлическое клише с гравировкой, предназначенное для нанесения оттисков на поддоны. Срок изготовления: 3 дня. Доставка/самовывоз.',
             'preview_image'=>'/images/ippc7080.png',
             'main_image'=>'/images/ippc7080.png',
             'content'=>'Латунное изделие с гравировкой глубиной не менее 2 мм. Греется при помощи источника открытого огня или от электрического нагревателя с тэнами. Возможно производство любых размеров, гравировка любых символов. Резбьба универсальная, позволяющая присоединить ручку или установку для нагрева клейм.',
@@ -118,7 +126,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо ударное для заводов',
-            'description'=>'Клеймо ударное для заводов',
+            'meta_title'=>'Клейма для заводов заказать в Минске',
+            'description'=>'Производство клейм для заводов в Минске с доставкой по Беларуси. Гравировка под заказ, закалка. Стоимость: 160 рублей.',
             'preview_image'=>'/images/udarn4.jpg',
             'main_image'=>'/images/udarn4.jpg',
             'content'=>'',
@@ -128,7 +137,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо ударное для сварщиков',
-            'description'=>'Клеймо ударное для сварщиков',
+            'meta_title'=>'Ударные клейма для сварщиков заказать в Минске',
+            'description'=>'Производство ударных клейм для сварщиков в Минске. Клейма с заказлкой и индивидуальной гравировкой под заказ. Стоимость: 135 рублей.',
             'preview_image'=>'/images/svar.jpg',
             'main_image'=>'/images/svar.jpg',
             'content'=>'',
@@ -138,7 +148,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо ударное для мастеров',
-            'description'=>'Клеймо ударное для мастеров',
+            'meta_title'=>'Ударное клеймо для ремеслеников купить в Минске',
+            'description'=>'Изготовление ударных клейм по металлу для ремесленников в Минске под заказ. Гравировка и закалка.',
             'preview_image'=>'/images/udarn5.jpg',
             'main_image'=>'/images/udarn5.jpg',
             'content'=>'',
@@ -148,7 +159,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо ударное для баллонов',
-            'description'=>'Клеймо ударное для баллонов',
+            'meta_title'=>'Ударные клейма для баллонов с закалкой в Минске',
+            'description'=>'Производство ударных клейм для клеймения баллонов в Минске. Изготовление любых размеров с разной степенью закалки.',
             'preview_image'=>'/images/ballon2.jpeg',
             'main_image'=>'/images/ballon2.jpeg',
             'content'=>'',
@@ -158,7 +170,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо ударное номерное / буквенное',
-            'description'=>'Клеймо ударное номерное / буквенное',
+            'meta_title'=>'Ударное клеймо c номерами и буквами заказать в Минске',
+            'description'=>'Изготовление ударных клейм с номерами или буквами в Минске. Возможность закалки, любого вида гравировки.',
             'preview_image'=>'/images/udarn7.jpeg',
             'main_image'=>'/images/udarn7.jpeg',
             'content'=>'',
@@ -168,7 +181,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'По индивидуальному макету',
-            'description'=>'По индивидуальному макету',
+            'meta_title'=>'Печать для сургуча по индивидуальному макету заказчика купить в Минске',
+            'description'=>'Изготовление печатей для сургуча по личному рисунку заказчика. Собственное производства, любые размеры, широкий ассортимент сургуча.',
             'preview_image'=>'/images/pechati.jpeg',
             'main_image'=>'/images/pechati.jpeg',
             'content'=>'',
@@ -178,7 +192,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Готовые',
-            'description'=>'Готовые сургучные печати',
+            'meta_title'=>'Готовые сургучные печати с гравировкой',
+            'description'=>'Готовые сургучные печати с гравировкой купить в Минске. Доставка почтой / курьером',
             'preview_image'=>'/images/pechat.jpg',
             'main_image'=>'/images/pechat.jpg',
             'content'=>'',
@@ -188,7 +203,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Заготовки под сургучную печать',
-            'description'=>'Заготовки под сургучную печать',
+            'meta_title'=>'Купить заготовку под сургучную печать',
+            'description'=>'Продажа заготовок под сургучные печати в Минске',
             'preview_image'=>'/images/pechatpust.jpg',
             'main_image'=>'/images/pechatpust.jpg',
             'content'=>'',
@@ -198,7 +214,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Сургучный оттиск',
-            'description'=>'Сургучный оттиск',
+            'meta_title'=>'Сургучный оттиск на подарок или конверт',
+            'description'=>'Нанесение сургучных оттисков на конверты, коробки. Стоимость: 2 рубля.',
             'preview_image'=>'/images/ottisc.jpg',
             'main_image'=>'/images/ottisc.jpg',
             'content'=>'',
@@ -208,6 +225,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения кожи',
+            'meta_title'=>'',
             'description'=>'Клише для тиснеия кожи',
             'preview_image'=>'/images/kozga.png',
             'main_image'=>'/images/kozga.png',
@@ -218,6 +236,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише по дереву',
+            'meta_title'=>'',
             'description'=>'Клише по дереву',
             'preview_image'=>'/images/kozga.png',
             'main_image'=>'/images/kozga.png',
@@ -228,7 +247,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения блокнотов',
-            'description'=>'Клише для тиснения блокнотов',
+            'meta_title'=>'Заказать клише для тиснения блокнотов в Минске',
+            'description'=>'Производство клише для тиснения блокнотов в Минске',
             'preview_image'=>'/images/blocknot.jpg',
             'main_image'=>'/images/blocknot.jpg',
             'content'=>'',
@@ -238,7 +258,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения мыла',
-            'description'=>'Клише для тиснения мыла',
+            'meta_title'=>'Производство клише для мыла в Минске',
+            'description'=>'Производство клише для мыла в Минске под заказ на латуни или магнии',
             'preview_image'=>'/images/mylo.png',
             'main_image'=>'/images/mylo.png',
             'content'=>'',
@@ -248,7 +269,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише AIRBAG',
-            'description'=>'Клише AIRBAG',
+            'meta_title'=>'Изготовление клише типа Airbag в Минске с доставкой',
+            'description'=>'Заказать клише AIRBAG в минске из магния или латуни на ручке / паяльнике',
             'preview_image'=>'/images/airbag.jpg',
             'main_image'=>'/images/airbag.jpg',
             'content'=>'',
@@ -258,7 +280,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения этикеток',
-            'description'=>'Клише для тиснения этикеток',
+            'meta_title'=>'Заказать клише для тиснения этикеток под заказ',
+            'description'=>'Клише для тиснения этикеток купить в Минске. Собственное производство, индивидуальные макеты.',
             'preview_image'=>'/images/eticketka.png',
             'main_image'=>'/images/eticketka.png',
             'content'=>'',
@@ -268,7 +291,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения на пластике',
-            'description'=>'Клише для тиснения на пластике',
+            'meta_title'=>'Клише для тиснения на пластике под заказ в Минске',
+            'description'=>'Клише для тиснения на пластике по индивидкальному макету заказчика. Доставка по все Беларуси почтой / курьером.',
             'preview_image'=>'/images/na_plasticke.jpg',
             'main_image'=>'/images/na_plasticke.jpg',
             'content'=>'',
@@ -278,7 +302,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения фольгой',
-            'description'=>'Клише для тиснения фольгой',
+            'meta_title'=>'Клише для тиснения фольгой купить в Минске',
+            'description'=>'Клише для тиснения фольгой под заказ. Гравировка по индивидуальному макету.',
             'preview_image'=>'/images/folgoi.jpg',
             'main_image'=>'/images/folgoi.jpg',
             'content'=>'',
@@ -288,136 +313,162 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клише для тиснения визиток',
-            'description'=>'Клише для тиснения визиток',
+            'meta_title'=>'Клише для тиснения визиток заказать в Минске',
+            'description'=>'Клише для тиснения визиток под заказ',
             'preview_image'=>'/images/vizitok.png',
             'main_image'=>'/images/vizitok.png',
             'content'=>'',
             'price'=>58,
             'slug'=>'klishe_dlya_tisneniya_vizitok',
-            'category_id'=>6
+            'category_id'=>6,
         ]);
         Product::create([
             'title'=>'Термоустановка НК-500',
-            'description'=>'Термоустановка НК-500',
+            'meta_title'=>'Устройство для нагрева клейм мощностью в 500 Вт от производителя',
+            'description'=>'Изготовление устройств для нагрева клейм и штампов. Нгреватели клейм для поддонов, клише и штампов НК-500, НК-1000. Доставка, собственное производство.',
             'preview_image'=>'/images/nk500s.jpg',
             'main_image'=>'/images/nk500s.jpg',
             'content'=>'',
             'price'=>365,
             'slug'=>'nagrevatel_klishe_nk-500',
-            'category_id'=>9
+            'category_id'=>9,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Термоустановка НК-1000',
-            'description'=>'Термоустановка НК-1000',
+            'meta_title'=>'Устройство для нагрева клейм для поддонов мощностью в 1000 Вт',
+            'description'=>'Электрические установки для нагрева клейм. Термоустановки собственного производства с гарантией.',
             'preview_image'=>'/images/nk1000s.jpg',
             'main_image'=>'/images/nk1000s.jpg',
             'content'=>'',
             'price'=>610,
             'slug'=>'nagrevatel_klishe_nk-1000',
-            'category_id'=>9
+            'category_id'=>9,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Нагреватель с регулятором мощности',
-            'description'=>'Нагреватель с регулятором мощности',
+            'meta_title'=>'Нагреватель клейм с регулятором мощности заказать в Минске',
+            'description'=>'Нагреватель с регулятором мощности. Собственное производство, доставка.',
             'preview_image'=>'/images/nagm.jpg',
             'main_image'=>'/images/nagm.jpg',
             'content'=>'',
             'price'=>820,
             'slug'=>'nagrevatel_klishe_s_regulyatorom',
-            'category_id'=>9
+            'category_id'=>9,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Паяльник',
-            'description'=>'Паяльник',
+            'meta_title'=>'Паяльник для клейм купить в Минске',
+            'description'=>'Паяльник для клейм и клише. Паяльники мощностью 100 - 300 Вт с оснасткой-переходником под клеймо.',
             'preview_image'=>'/images/100vt.jpeg',
             'main_image'=>'/images/100vt.jpeg',
             'content'=>'',
             'price'=>820,
             'slug'=>'payalnik',
-            'category_id'=>9
+            'category_id'=>9,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч красный',
-            'description'=>'Сургуч красный',
+            'meta_title'=>'Сургуч красного цвета купить в Минске с доставкой',
+            'description'=>'Красный сургуч для нанесения оттисков сургучной печатью купить в Минске. Доставка почтой наложенным платежом или курьером.',
             'preview_image'=>'/images/krasns1.jpg',
             'main_image'=>'/images/krasns1.jpg',
             'content'=>'',
             'price'=>14,
             'slug'=>'surguch_krasnyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч синий',
+            'meta_title'=>'Сургуч банковский синего цвета купить в Минске',
             'description'=>'Сургуч синий',
             'preview_image'=>'/images/siniy1.jpg',
             'main_image'=>'/images/siniy1.jpg',
             'content'=>'',
             'price'=>17,
             'slug'=>'surguch_sinij',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч зеленый',
+            'meta_title'=>'Сургуч зеленого цвета купить в Минске',
             'description'=>'Сургуч зеленый',
             'preview_image'=>'/images/zelen1.png',
             'main_image'=>'/images/zelen1.png',
             'content'=>'',
             'price'=>17,
             'slug'=>'surguch_zelenyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч коричневый',
+            'meta_title'=>'Сургуч коричневого цвета купить в Минске',
             'description'=>'Сургуч коричневый',
             'preview_image'=>'/images/korich.jpg',
             'main_image'=>'/images/korich.jpg',
             'content'=>'',
             'price'=>14,
             'slug'=>'surguch_korichnevyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч оранжевый',
+            'meta_title'=>'Сургуч оранжевого цвета купить в Минске',
             'description'=>'Сургуч оранжевый',
             'preview_image'=>'/images/orang.jpg',
             'main_image'=>'/images/orang.jpg',
             'content'=>'',
             'price'=>17,
             'slug'=>'surguch_oranzhevyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч в стержне красный',
+            'meta_title'=>'Сургуч стержневого типа красный купить в Минске',
             'description'=>'Сургуч в стержне красный',
             'preview_image'=>'/images/sterg_kr.jpg',
             'main_image'=>'/images/sterg_kr.jpg',
             'content'=>'',
             'price'=>1.5,
             'slug'=>'surguch_v_sterjne_krasnyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч в стержне коричневый',
+            'meta_title'=>'Сургуч в стержне коричневый купить в Минске с доставкой.',
             'description'=>'Сургуч в стержне коричневый',
             'preview_image'=>'/images/sterg_kor.jpg',
             'main_image'=>'/images/sterg_kor.jpg',
             'content'=>'',
             'price'=>1.5,
             'slug'=>'surguch_v_sterjne_korichnevyj',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч в стержне синий',
+            'meta_title'=>'Сургуч синего цвета с стержнях купить в Минске',
             'description'=>'Сургуч в стержне синий',
             'preview_image'=>'/images/sterg_sin.jpeg',
             'main_image'=>'/images/sterg_sin.jpeg',
             'content'=>'',
             'price'=>1.5,
             'slug'=>'surguch_v_sterjne_sinij',
-            'category_id'=>5
+            'category_id'=>5,
+            'is_stamp'=>0,
         ]);
         Product::create([
             'title'=>'Сургуч в стержне оранжевый',
+            'meta_title'=>'Сургуч оранжевый в стержне для нанесения сургучных оттисков',
             'description'=>'Сургуч в стержне оранжевый',
             'preview_image'=>'/images/sterg_or.jpg',
             'main_image'=>'/images/sterg_or.jpg',
@@ -428,6 +479,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Сургуч в стержне зеленый',
+            'meta_title'=>'Стержневой сургуч зеленого цвета купить в Минске',
             'description'=>'Сургуч в стержне зеленый',
             'preview_image'=>'/images/sterg_zel.jpg',
             'main_image'=>'/images/sterg_zel.jpg',
@@ -438,7 +490,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "Ветнадзор"',
-            'description'=>'Клеймо для мяса "Ветнадзор"',
+            'meta_title'=>'Клеймо овальной формы Ветнадзор (ветеринарный штамп)',
+            'description'=>'Производство ветеринарных клейм овальной формы и клише для мяса и туш в Минске с доставкой по Беларуси.',
             'preview_image'=>'/images/vet_main.jpg',
             'main_image'=>'/images/vet_main.jpg',
             'content'=>'',
@@ -448,7 +501,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Ветеринарный штамп "Ветслужба финноз"',
-            'description'=>'Ветеринарный штамп "Ветслужба финноз"',
+            'meta_title'=>'Клеймо для мяса ветеринарный штамп Финноз купить в Минске',
+            'description'=>'Купить ветеринарный штамп Финноз в Миснке. Собственное производство, срочное изготовление.',
             'preview_image'=>'/images/finnoz.jpg',
             'main_image'=>'/images/finnoz.jpg',
             'content'=>'',
@@ -458,7 +512,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Ветеринарный штамп "Ветслужба на уничтожение"',
-            'description'=>'Ветеринарный штамп "Ветслужба" на уничтожение',
+            'meta_title'=>'Клеймо для мяса Ветеринарный штамп На уничтожение заказать с доставкой',
+            'description'=>'Купить ветеринарный штамп На уничтожение латунный с гравировкой в Миснке. Быстрое изготовление.',
             'preview_image'=>'/images/na_unicht.jpg',
             'main_image'=>'/images/na_unicht.jpg',
             'content'=>'',
@@ -468,7 +523,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Ветеринарный штамп "Ветслужба туберкулез"',
-            'description'=>'Ветеринарный штамп "Ветслужба туберкулез"',
+            'meta_title'=>'Клеймо для мяса(ветеринарный штамп) Туберкулез под заказ',
+            'description'=>'Купить ветеринарный штамп Ветслужба туберкулез в Миснке. Изготовление под заказ.',
             'preview_image'=>'/images/tuberk.jpg',
             'main_image'=>'/images/tuberk.jpg',
             'content'=>'',
@@ -478,7 +534,9 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Ветеринарный штамп "Ветслужба на вареную колбасу"',
-            'description'=>'Ветеринарный штамп "Ветслужба на вареную колбасу"',
+            'meta_title'=>'Ветеринарный штамп "Ветслужба на вареную колбасу"',
+            'description'=>'
+            Купить ветеринарный штамп На вареную колбасу в Миснке. Ассортиимент ветеринарных клейм.',
             'preview_image'=>'/images/na_varenuy.jpg',
             'main_image'=>'/images/na_varenuy.jpg',
             'content'=>'',
@@ -488,7 +546,8 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Ветеринарный штамп "Утиль"',
-            'description'=>'Ветеринарный штамп "Утиль"',
+            'meta_title'=>'Клеймо для мяса Ветслужба - утиль',
+            'description'=>'Купить ветеринарный штамп Ветслужба - утиль в Миснке. Изготовление за 3-4 дня.',
             'preview_image'=>'/images/util.jpg',
             'main_image'=>'/images/util.jpg',
             'content'=>'',
@@ -498,6 +557,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "МБ"',
+            'meta_title'=>'Клеймо для мяса МБ',
             'description'=>'Клеймо для мяса "МБ"',
             'preview_image'=>'/images/mb.jpg',
             'main_image'=>'/images/mb.jpg',
@@ -508,6 +568,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "ВБ"',
+            'meta_title'=>'Клеймо для мяса "ВБ"',
             'description'=>'Клеймо для мяса "ВБ"',
             'preview_image'=>'/images/vb.jpg',
             'main_image'=>'/images/vb.jpg',
@@ -518,6 +579,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "Т"',
+            'meta_title'=>'Клеймо для мяса "Т"',
             'description'=>'Клеймо для мяса "Т"',
             'preview_image'=>'/images/t.jpg',
             'main_image'=>'/images/t.jpg',
@@ -528,6 +590,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "С"',
+            'meta_title'=>'Клеймо для мяса "С"',
             'description'=>'Клеймо для мяса "С"',
             'preview_image'=>'/images/c.jpg',
             'main_image'=>'/images/c.jpg',
@@ -538,6 +601,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "З"',
+            'meta_title'=>'Клеймо для мяса "З"',
             'description'=>'Клеймо для мяса "З"',
             'preview_image'=>'/images/e.jpg',
             'main_image'=>'/images/e.jpg',
@@ -548,6 +612,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "П"',
+            'meta_title'=>'Клеймо для мяса "П"',
             'description'=>'Клеймо для мяса "П"',
             'preview_image'=>'/images/p.jpg',
             'main_image'=>'/images/p.jpg',
@@ -558,6 +623,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса "МК"',
+            'meta_title'=>'Клеймо для мяса "МК"',
             'description'=>'Клеймо для мяса "МК"',
             'preview_image'=>'/images/mk.jpg',
             'main_image'=>'/images/mk.jpg',
@@ -568,6 +634,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'title'=>'Клеймо для мяса фигурное',
+            'meta_title'=>'Клеймо для мяса фигурное',
             'description'=>'Клеймо для мяса фигурное',
             'preview_image'=>'/images/figurnoe.jpg',
             'main_image'=>'/images/figurnoe.jpg',

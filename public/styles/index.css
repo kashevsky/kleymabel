@@ -98,7 +98,7 @@ min-height: 210px;
     background: white;
     width: 60vw;
     margin: 1px auto;
-    padding: 5vh 10vw;
+    padding: 5vh 10vw 10vh 10vw;
     font-family: 'Montserrat';
 }
 .about_title
@@ -132,6 +132,7 @@ min-height: 210px;
     text-align: center;
     font-size: 30px;
     padding-bottom: 9vh;
+    padding-top: 9vh;
 }
 .options_row{
     display: flex;
@@ -193,12 +194,17 @@ min-height: 210px;
     text-align: center;
     font-size: 30px;
     color: #363636;
-    padding: 7vh 0;
+    padding: 12vh 0;
 }
-.how_to_order-flex{
+.how_to_order-flex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 3vh 0;
+    margin-bottom: 5vh;
+}
+.how_to_order-flex img{
+    width: 60vw;
 }
 .how_to_order__item{
     margin-right: 4vw;
@@ -216,6 +222,7 @@ min-height: 210px;
     font-size: 40px;
     color: #363636;
     font-weight: normal;
+    padding: 5vh 0;
 }
 .portfolio{
     display: flex;
@@ -225,11 +232,11 @@ min-height: 210px;
     padding: 4vh 10vw;
 }
 .portfolio__item{
-    margin: 0 1vw 1vh 0;
-    border: 1px solid gold;
+    margin: 0 1vw 2vh 0;
 }
 .portfolio__item img{
     width: 20vw;
+    height: 40vh;
 }
 /* end about index page */
 @media only screen and (min-width : 320px) and (max-width : 479px) {
@@ -322,6 +329,17 @@ padding: 5vh 0;
 }
 .advantages__item{
     margin: 2vh 4vw;
+}
+.how_to_order h3{
+padding: 7vh 0;
+}
+.how_to_order-flex {
+    padding: 0 0;
+    margin-bottom: 1vh;
+}
+.portfolio__item img{
+    width: 90vw;
+    height: 50vh;
 }
 }
 @media (min-width: 430px) and (max-width: 1199.98px) { 

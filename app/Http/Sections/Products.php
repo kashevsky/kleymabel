@@ -98,7 +98,7 @@ class Products extends Section implements Initializable
             AdminFormElement::columns()->addColumn([
                 AdminFormElement::html('Данные для СЕО'),
                 AdminFormElement::html('<hr>'),
-                AdminFormElement::text('title', 'Заголовок'),
+                AdminFormElement::text('meta_title', 'Title'),
                 AdminFormElement::text('slug', 'URL-адрес(НЕ МЕНЯТЬ)'),
                 AdminFormElement::text('description', 'Описание'),
                 AdminFormElement::html('Расположение в каталоге'),
@@ -110,11 +110,13 @@ class Products extends Section implements Initializable
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Элементы страницы'),
                 AdminFormElement::html('<hr>'),
+                AdminFormElement::text('title', 'Заголовок'),
                 AdminFormElement::wysiwyg('content', 'Текст'),
                 AdminFormElement::number('price', 'Цена'),
                 AdminFormElement::image('preview_image', 'Отображение в каталоге (превью)'),
                 AdminFormElement::image('main_image', 'Заглавное изображение'),
                 AdminFormElement::html('<hr>'),
+                AdminFormElement::checkbox('is_stamp','Это клеймо?'),
                 AdminFormElement::html('Характеристики товара'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::hasMany('haracteristics', [

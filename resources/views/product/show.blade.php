@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('meta_title')
+{{$product->meta_title}}
+@endsection
+@section('meta_descroption')
+{{$product->description}}
+@endsection
 @section('content')
 <div class="bread_crumbs">
     <div class="bread_crumbs__item">
@@ -118,25 +124,18 @@
     @endforeach
 </div>
 @endif
+@if($product->is_stamp == 1)
 <div class="how_to_order">
     <h3>Как заказать</h3>
     <div class="how_to_order-flex">
-        <div class="how_to_order__item">
-            <img src="/images/maket.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/redact.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/predoplata.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/zabor.svg">
-            <p></p>
-        </div>
+        <img src="/images/kak.svg">
     </div>
+    
 </div>
+<div class="how_to_order-mobile">
+    <div class="how_to_order-flex">
+        <img src="/images/kak-mobile.svg">
+    </div> 
+</div>
+@endif
 @endsection

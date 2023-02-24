@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('meta_title')
-{{$category->title}}
+{{$category->meta_title}}
 @endsection
 @section('meta_descroption')
 {{$category->description}}
@@ -142,27 +142,20 @@
     </div>
 </div>
 @endisset
+@if($category->is_stamp == 1)
 <div class="how_to_order">
     <h3>Как заказать</h3>
     <div class="how_to_order-flex">
-        <div class="how_to_order__item">
-            <img src="/images/maket.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/redact.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/predoplata.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/zabor.svg">
-            <p></p>
-        </div>
+        <img src="/images/kak.svg">
+    </div>
+    
+</div>
+<div class="how_to_order-mobile">
+    <div class="how_to_order-flex">
+        <img src="/images/kak-mobile.svg">
     </div>
 </div>
+@endif
 <div class="main_text">
     {!! html_entity_decode($category->content) !!}
 </div>

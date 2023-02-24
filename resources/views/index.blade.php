@@ -29,6 +29,7 @@
     </nav>
 </div>
 <div class="catalog_section">
+    <p><a name="catalog"></a></p>
     <h1>Изготовление клейм</h1>
     <div class="catalog">
         @foreach ($categories as $category )
@@ -47,6 +48,7 @@
         @endforeach
     </div>
 </div>
+<p><a name="about"></a></p>
 <div class="about_section_conainer">
     <div class="about_section">
         <p class="about_title">О компании</p>
@@ -74,6 +76,7 @@
     </div>
 </div>
 <div class="portfolio_container">
+    <p><a name="portfolio"></a></p>
         <h2>Портфолио клейм</h2>
     <div class="portfolio">
         @foreach ($portfolio as $item )

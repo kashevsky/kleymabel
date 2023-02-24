@@ -40,5 +40,10 @@ class MainPortfolioSeeder extends Seeder
             'alt'=>'Клише для тиснения',
             'title'=>'Клише для тиснения',
         ]);
+        MainPortfolio::create([
+            'image'=>'images/kzg1.jpg',
+            'alt'=>'Клише для тиснения',
+            'title'=>'Клише для тиснения',
+        ]);
     }
 }

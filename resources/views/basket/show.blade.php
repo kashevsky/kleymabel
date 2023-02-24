@@ -25,12 +25,12 @@
               <div class="count">
                 <form action="{{route('basket.add-product-count',$product)}}" method="post">
                   @csrf
-                <input type="submit" value="+">
+                <input type="submit" value="+" class="add_low">
                 </form>
                 <p>{{$product->count}}</p>
                 <form action="{{route('basket.low-product-count',$product)}}" method="post" name="low_count_{{$product->id}}">
                   @csrf
-                <input type="submit" value="-">
+                <input type="submit" value="-" class="add_low">
                 </form>
               </div>
             </td>

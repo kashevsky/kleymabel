@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
+            $table->string('meta_title')->nullable();
             $table->string('description')->nullable();
             $table->string('preview_image')->nullable();
             $table->string('alt_main_image')->nullable();
@@ -33,6 +34,7 @@ return new class extends Migration
             $table->string('video')->nullable();
             $table->text('short_desc')->nullable();
             $table->tinyInteger('show_in_menu')->default(1);
+            $table->tinyInteger('is_stamp')->default(1);
             $table->string('icon')->nullable();
             $table->string('icon_black')->nullable();
             $table->timestamps();

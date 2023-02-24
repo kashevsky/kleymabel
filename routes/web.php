@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','\App\Http\Controllers\IndexController@index')->name('index');
 Route::post('/','\App\Http\Controllers\IndexController@search')->name('search');
 Route::get('/category/{slug}','\App\Http\Controllers\IndexController@show')->name('category.show');
+Route::get('/product/kleyma_po_kozhe', function () {
+    return redirect('/category/kleyma_po_kozhe');
+});
+Route::get('/product/kleyma_po_derevu', function () {
+    return redirect('/category/kleyma_po_derevu');
+});
 Route::get('/product/{slug}','\App\Http\Controllers\ProductController@show')->name('product.show');
 Route::get('/sub_product/{slug}','\App\Http\Controllers\ProductController@showSubProduct')->name('product.showSubProduct');
 Route::get('/basket-show/product','\App\Http\Controllers\BasketController@show')->name('basket.show');
@@ -23,7 +29,6 @@ Route::post('/basket/add-category/{product}','\App\Http\Controllers\BasketContro
 Route::post('/basket/add-product-count/{product}','\App\Http\Controllers\BasketController@addCount')->name('basket.add-product-count');
 Route::post('/basket/low-product-count/{product}','\App\Http\Controllers\BasketController@lowCount')->name('basket.low-product-count');
 Route::post('/basket/confirm','\App\Http\Controllers\BasketController@confirm')->name('basket.confirm');
-
 Auth::routes([
     'reset'=> false,
     'confirm'=> false,

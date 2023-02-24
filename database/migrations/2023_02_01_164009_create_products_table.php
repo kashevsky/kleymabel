@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
+            $table->string('meta_title')->nullable();
             $table->string('description')->nullable();
             $table->string('short_desc')->nullable();
             $table->string('preview_image')->nullable();
@@ -23,6 +24,7 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->float('price')->nullable();
             $table->string('slug')->nullable();
+            $table->tinyInteger('is_stamp')->default(1);
             $table->string('sub_products_ids')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->index('category_id');

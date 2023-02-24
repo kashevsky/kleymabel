@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('meta_title')
+{{$subProduct->meta_title}}
+@endsection
+@section('meta_descroption')
+{{$subProduct->description}}
+@endsection
 @section('content')
 <div class="bread_crumbs">
     <div class="bread_crumbs__item">
@@ -14,7 +20,9 @@
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
+        <a href="{{route('product.show',$product->slug)}}">
         {{$product->title}}
+        </a>
     </div>
     <img src="/images/array.svg">
     <div class="bread_crumbs__item">
@@ -105,23 +113,15 @@
 <div class="how_to_order">
     <h3>Как заказать</h3>
     <div class="how_to_order-flex">
-        <div class="how_to_order__item">
-            <img src="/images/maket.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/redact.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/predoplata.svg">
-            <p></p>
-        </div>
-        <div class="how_to_order__item">
-            <img src="/images/zabor.svg">
-            <p></p>
-        </div>
+        <img src="/images/kak.svg">
     </div>
+    
+</div>
+<div class="how_to_order-mobile">
+    <div class="how_to_order-flex">
+        <img src="/images/kak-mobile.svg">
+    </div>
+    
 </div>
 
 @endsection
