@@ -36,6 +36,10 @@ class IndexController extends Controller
         $categories = Category::get();
         $menuCategories = $categories->where('show_in_menu',1);
         $category = $categories->where('slug',$slug)->first();
+        if(!isset($category->products))
+        {
+            return abort(404);
+        }
         $products = $category->products()->whereNull('product_id')->get();
         $haracteristics = $category->haracteristics;
         $options = $category->options;

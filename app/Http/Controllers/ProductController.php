@@ -13,6 +13,10 @@ class ProductController extends Controller
         $categories = Category::get();
         $menuCategories = $categories->where('show_in_menu',1);
         $product = Product::where('slug',$slug)->first();
+        if(!isset($product))
+        {
+            return abort(404);
+        }
         $subProducts = $product->subProducts;
         $haracteristics = $product->haracteristics;
         $images = $product->images;
@@ -23,6 +27,10 @@ class ProductController extends Controller
         $categories = Category::get();
         $menuCategories = $categories->where('show_in_menu',1);
         $subProduct = Product::where('slug',$slug)->first();
+        if(!isset($subProduct))
+        {
+            return abort(404);
+        }
         $images = $subProduct->images;
         $category = $subProduct->product->category;
         $product = $category->products()->where('id',$subProduct->product_id)->first();
