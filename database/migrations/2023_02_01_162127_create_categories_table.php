@@ -33,7 +33,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->string('video')->nullable();
             $table->text('short_desc')->nullable();
-            $table->tinyInteger('show_in_menu')->default(1);
+            $table->tinyInteger('show_in_menu')->default(0);
             $table->tinyInteger('is_stamp')->default(1);
             $table->string('icon')->nullable();
             $table->string('icon_black')->nullable();

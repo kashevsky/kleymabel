@@ -123,6 +123,13 @@ class Products extends Section implements Initializable
                     AdminFormElement::text('parameter','Параметр'),
                     AdminFormElement::text('value','Значение'),
                 ]),
+                AdminFormElement::html('Изображения слайдера'),
+                AdminFormElement::html('<hr>'),
+                AdminFormElement::hasMany('images', [
+                    AdminFormElement::image('image','Изображение слайдера'),
+                    AdminFormElement::text('alt','Описание картинки'),
+                    AdminFormElement::text('title','Заголовок картинки'),
+                ]),
 
             ],'col-xs-12 col-sm-6 col-md-8 col-lg-12'),
         ]);

@@ -112,6 +112,8 @@ class Categories extends Section implements Initializable
                 AdminFormElement::image('main_image', 'Основное изображение'),
                 AdminFormElement::text('alt_main_image','Описание основного изображения (alt)'),
                 AdminFormElement::text('alt_main_image','Заголовок основного изображения (title)'),
+                AdminFormElement::html('Изображение для слайдера'),
+                AdminFormElement::html('<hr>'),
                 AdminFormElement::hasMany('images', [
                     AdminFormElement::image('image','Изображение слайдера'),
                     AdminFormElement::text('alt','Описание картинки'),

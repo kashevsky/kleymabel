@@ -12,6 +12,7 @@ use Database\Seeders\CategorySeeder;
 use Database\Seeders\SubProductSeeder;
 use Database\Seeders\HaracteristicsSeeder;
 use Database\Seeders\CategoryOptionsSeeder;
+use Database\Seeders\WebsiteRedirectsSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -29,5 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call([CategoryOptionsSeeder::class]);
         $this->call([SlideSeeder::class]);
         $this->call([MainPortfolioSeeder::class]);
+        $this->call([WebsiteRedirectsSeeder::class]);
+
     }
 }

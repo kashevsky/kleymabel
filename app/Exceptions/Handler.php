@@ -49,5 +49,13 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    public function render($request, Throwable $exception)
+    {
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+            $url = WebsiteRedirects::where('old_url', $request->getRequestUri())->first();
+            return Redirect::to($url->new_url, 301);
+        }
+        return parent::render($request, $exception);
+    }
     
 }
