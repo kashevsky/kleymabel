@@ -72,9 +72,9 @@
                                 <li><a href="#about">О нас</a></li>
                                 <li><a href="#catalog">Каталог</a></li>
                                 <li><a href="#portfolio">Портфолио</a></li>
-                                <li><a href="">Доставка</a></li>
-                                <li><a href="">Оплата</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li><a href="{{route('delivery')}}">Доставка</a></li>
+                                <li><a href="{{route('payment')}}">Оплата</a></li>
+                                <li><a href="{{route('contacts')}}">Контакты</a></li>
                             </nav>
                             <hr>
                             <div class="mobile-menu__item">
@@ -95,9 +95,9 @@
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#catalog">Каталог</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Оплата</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="{{route('delivery')}}">Доставка</a></li>
+                <li><a href="{{route('payment')}}">Оплата</a></li>
+                <li><a href="{{route('contacts')}}">Контакты</a></li>
             </nav>
         </div>
     </div>
@@ -112,9 +112,9 @@
                         <a href="#about">О нас</a>
                         <a href="#catalog">Каталог</a>
                         <a href="#portfolio">Портфолио</a>
-                        <a href="">Доставка</a>
-                        <a href="">Оплата</a>
-                        <a href="">Контакты</a>
+                        <a href="{{route('delivery')}}">Доставка</a>
+                        <a href="{{route('payment')}}">Оплата</a>
+                        <a href="{{route('contacts')}}">Контакты</a>
                     </nav>
                 </div>
                 <div class="header_icons">

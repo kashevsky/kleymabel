@@ -117,6 +117,7 @@ class Categories extends Section implements Initializable
                     AdminFormElement::text('alt','Описание картинки'),
                     AdminFormElement::text('title','Заголовок картинки'),
                 ]),
+                AdminFormElement::checkbox('is_stamp','Это клеймо?'),
                 AdminFormElement::textarea('short_desc','Краткое описание'),
                 AdminFormElement::multiselect('products', 'Вложенные продукты', \App\Models\Product::class)->setDisplay('title'),
                 AdminFormElement::html('<hr>'),

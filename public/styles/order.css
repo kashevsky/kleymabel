@@ -62,3 +62,15 @@ justify-content: center;
 .add_low{
 padding: 1px 3px;
 }
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+.basket-form{
+    width: 90vw;
+}
+.basket-form input{
+    width: 50vw;
+}
+.basket-form  input[type=submit] {
+width: 30vw;
+}
+
+}

@@ -19,6 +19,18 @@ class IndexController extends Controller
         $portfolio = MainPortfolio::get();
         return view('index', compact('categories','menuCategories','portfolio'));
     }
+    public function contacts()
+    {
+        return view('contacts');
+    }
+    public function payment()
+    {
+        return view('payment');
+    }
+    public function delivery()
+    {
+        return view('delivery');
+    }
     public function show($slug)
     {
         $categories = Category::get();

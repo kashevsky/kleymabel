@@ -26,8 +26,8 @@
 .it img {width:6vw; height: 85px; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px;}
 .it img:hover {border: 1px solid #000; cursor:pointer}
 @media only screen and (min-width : 320px) and (max-width : 479px) {
-.img img{width:100vw; height: 55vh; }
-.it img {width:25vw; height: 12vh; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
+.img img{width:100vw; height: 390px; }
+.it img {width:25vw; height: 95px; float:left;border: 1px solid #D6D6D6; margin-right: 6px; margin-top: 20px; margin-left: 2vw;}
 #fancybox-img{width: 100vw; padding: 20px;}
 #fancybox-wrap{width: 100vw; height: 100vh;}
 }

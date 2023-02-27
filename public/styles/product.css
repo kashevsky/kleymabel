@@ -199,11 +199,11 @@ table {
     }
     .sub_products__item{
         width: 90vw;
-        height: 65vh;
+        height: 55vh;
     }
     .sub_products__item img{
         width: 90vw;
-        height: 50vh;
+        height: 350px;
     }
     .price{
         font-size: 28px;

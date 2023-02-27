@@ -41,20 +41,20 @@
     <form action="{{route('basket.confirm')}}" method="post" enctype="multipart/form-data">
       @csrf
     <div>
-      <input type="text" name="name" placeholder="Имя">
+      <input type="text" name="name" placeholder="Имя" class="basket_input">
     </div>
     <div>
       @error('phone')
         <p style="color: red; padding-bottom:10px">{{$message}}</p>
       @enderror
-      <input type="text" name="phone" placeholder="Телефон">
+      <input type="text" name="phone" placeholder="Телефон" class="basket_input">
     </div>
     <div>
-      <input type="mail" name="email" placeholder="Почта">
+      <input type="mail" name="email" placeholder="Почта" class="basket_input">
     </div>
     <div>
       <label>Макет</label>
-      <input type="file" name="image">
+      <input type="file" name="image" class="basket_input-file">
       <div>
       <label style="color: red">Форматы: jpeg, jpg, png, pdf</label>
       </div>

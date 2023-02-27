@@ -152,6 +152,73 @@ li{
     align-items: center;
     flex-wrap: wrap;
 }
+.contacts_container{
+    margin: 15vh 0;
+}
+.contacts{
+    background-color: #363636;
+    width: 40vw;
+    margin: 1px auto;
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacts_body{
+    margin-left: 1vw;
+}
+.socials-block{
+    display: flex;
+    flex-direction: column;
+}
+.socials-block img{
+width: 40px;
+margin-bottom: 10px;
+}
+.contacts_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.contacts_item img{
+    margin-right: 1vw;
+    width: 30px;
+}
+.delivery_container{
+    margin: 15vh 0;
+}
+.delivery{
+    background-color: #363636;
+    width: 35vw;
+    margin: 1px auto;
+    color: white;
+    padding: 30px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.delivery img{
+    width: 10vw;
+}
+.delivery h1{
+    text-align: center;
+    color: #FE201D;
+    margin-bottom: 5vh;
+    font-size: 20px;
+}
+.delivery_body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.delivery_body li{
+    margin-bottom: 20px;
+    list-style: disc;
+}
 
 @media only screen and (min-width : 320px) and (max-width : 479px) {
 .mobile-phone{
@@ -185,6 +252,55 @@ li{
 }
 .header_socials{
     display: none;
+}
+.contacts_container{
+    margin: 5vh 0;
+}
+.contacts{
+    background-color: #363636;
+    width: 70vw;
+    margin: 1px auto;
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacts_body{
+    margin-left: 0vw;
+}
+
+.delivery_container{
+    margin: 5vh 0;
+}
+.delivery{
+    background-color: #363636;
+    width: 85vw;
+    margin: 1px auto;
+    color: white;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.delivery img{
+    width: 20vw;
+    margin-top: 20px;
+}
+.delivery h1{
+    text-align: center;
+    color: #FE201D;
+    margin-bottom: 5vh;
+    font-size: 20px;
+}
+.delivery_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.delivery_body li{
+    margin-bottom: 20px;
+    list-style: disc;
 }
 }
 @media (min-width: 430px) and (max-width: 1199.98px) { 

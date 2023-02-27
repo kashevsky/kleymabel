@@ -12,7 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 Route::get('/','\App\Http\Controllers\IndexController@index')->name('index');
+Route::get('/contacts','\App\Http\Controllers\IndexController@contacts')->name('contacts');
+Route::get('/payment','\App\Http\Controllers\IndexController@payment')->name('payment');
+Route::get('/delivery','\App\Http\Controllers\IndexController@delivery')->name('delivery');
 Route::post('/','\App\Http\Controllers\IndexController@search')->name('search');
 Route::get('/category/{slug}','\App\Http\Controllers\IndexController@show')->name('category.show');
 Route::get('/product/kleyma_po_kozhe', function () {

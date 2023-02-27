@@ -98,7 +98,7 @@ class BasketController extends Controller
                 $order .= $basketProduct->title . ',';
             }
             $data['order'] = $order;
-            Mail::to('selectneo@mail.ru')->send(new SendMail($data));
+            Mail::to('kleymabel@mail.ru')->send(new SendMail($data));
             return redirect()->route('index');
     }
     public function addCategory(Category $product)

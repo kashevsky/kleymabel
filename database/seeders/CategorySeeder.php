@@ -21,6 +21,8 @@ class CategorySeeder extends Seeder
             'description'=>'Изготовление клейм, клише и штампов для поддонов и паллетк. Клейма IPPC, EUR, FIN, UIC и электрические нагреватели всех видов.',
             'preview_image'=>'images/ippc.jpeg',
             'main_image'=>'images/dop-p1.png',
+            'alt_main_image'=>'Клеймо для поддонов на электрическом наргревателе',
+            'title_main_image'=>'Клеймо для клеймения поддонов на нагревателе',
             'content'=>'<h2 style="text-align: center;">Что такое клеймо для поддонов?</h2>
 
             <p>&nbsp; &nbsp; &nbsp;Клеймо для поддонов - металлическое изделие, нагреваемое от электрической установки или открытого огня, предназначенное для нанесения отжигов на бобышках паллет. Наличие отжига подтверждает факт соответствия поддона стандартам паллетной ассоциации. Паллеты без наличия клейма считаются негодными для транспортировки продукции. Наличие штампа на них считается обязательным условием.</p>
@@ -85,6 +87,8 @@ class CategorySeeder extends Seeder
             'description'=>'Изготовление клейм, клише и штампов для выжигания по дереву в Минске. Любые размеры и формы. Доставка по Минску и Беларуси.',
             'preview_image'=>'images/po_derevu.jpg',
             'main_image'=>'images/produb.jpg',
+            'alt_main_image'=>'Клеймо для выжигания по дереву на ручке',
+            'title_main_image'=>'Клеймо для выжигания на дереве латунное на ручке',
             'content'=>'<h2 style="text-align: center;">Что такое клеймо для выжигания по дереву?</h2>
 
             <p>&nbsp;</p>
@@ -126,6 +130,8 @@ class CategorySeeder extends Seeder
         Category::create([
             'title'=>'Тиснение на коже',
             'meta_title'=>'Клише и клеймо для тиснения на коже заказать в Минске',
+            'alt_main_image'=>'Клеймо для тиснения кожи',
+            'title_main_image'=>'Клеймо для кожи',
             'description'=>'Производство клише, штампов и клейм для тиснения на коже. Изготовление 2-3 дня. На ручке, паяльнике или термоустановке.',
             'preview_image'=>'images/kozga.png',
             'main_image'=>'images/kzg1.jpg',
@@ -148,6 +154,8 @@ class CategorySeeder extends Seeder
         Category::create([
             'title'=>'Сургучные печати',
             'meta_title'=>'Печать для сургуча заказать в Минске',
+            'alt_main_image'=>'Печать для сургуча',
+            'title_main_image'=>'Изображение печати для сургуча',
             'description'=>'Купить печать под сургуч с индивидуальной гравировкой в Минске. Готовые сургучные печати по низким ценам.',
             'preview_image'=>'images/pechati.jpeg',
             'main_image'=>'images/ppp1.jpg',
@@ -190,6 +198,8 @@ class CategorySeeder extends Seeder
         Category::create([
             'title'=>'Сургуч',
             'meta_title'=>'Сургуч и воск всех видов купить в Минске',
+            'alt_main_image'=>'Сургуч',
+            'title_main_image'=>'Сургуч',
             'description'=>'Продажа сургуча всех видов: банковского, в стержнях, декоративного, в гранулах, на развес, с фитилем, воск. Сургуч для сургучных печатей и конвертов',
             'preview_image'=>'images/surguch.jpeg',
             'main_image'=>'images/surguch.jpeg',
@@ -278,6 +288,8 @@ class CategorySeeder extends Seeder
         Category::create([
             'title'=>'Клише для тиснения',
             'meta_title'=>'Клише для тиснения под заказ купить в Минске',
+            'alt_main_image'=>'Клише для тиснения',
+            'title_main_image'=>'Изображение клише для тиснения',
             'description'=>'Изготовление клише для тиснения кожи, дерева, мыла, фольгой блокнотов. Штампы на ручке или паяльнике любых размеров и форм. Индивидуальная гравировка, срок изготовления: 3-4 дня.',
             'preview_image'=>'images/klishe.jpeg',
             'main_image'=>'images/klishe_dlya_ticneniya.jpg',
@@ -331,6 +343,8 @@ class CategorySeeder extends Seeder
         Category::create([
             'title'=>'Ударные клейма',
             'meta_title'=>'Ударные клейма по металлу заказать в Минске',
+            'alt_main_image'=>'Клеймо ударное по металлу закаленное',
+            'title_main_image'=>'Клеймо по металлу закаленное ударное',
             'description'=>'Изготовление ударных клейм по металлическим поверхностям любых форм, типов и размеров. Гравировка на клеймах индивидуального макета заказчика, закалка ударной части.',
             'preview_image'=>'images/udarnye.jpeg',
             'main_image'=>'images/udarn1.jpg',
@@ -430,6 +444,8 @@ class CategorySeeder extends Seeder
             'meta_title'=>'Клеймо для бургеров заказать в Минске',
             'description'=>'Производство клейм и клише для бургеров. Изготовление 2-3 дня. Штампы для бургеров любых форм и размеров под заказ.',
             'preview_image'=>'images/burger.png',
+            'alt_main_image'=>'Клеймо для бургеров',
+            'title_main_image'=>'Клеймо для клеймения бургеров',
             'main_image'=>'images/burger_1.jpg',
             'content'=>'<h2 style="text-align: center;">&nbsp;</h2>
 
@@ -457,6 +473,8 @@ class CategorySeeder extends Seeder
             'meta_title'=>'Устройства для нагрева клейм для поддонов заказать в Минске',
             'description'=>'Производство устройств для нагрева клейм типа IPPC, EUR, EPAL. Термоустановки мощностью 500 и 1000 Вт, изготовление клейм и штампов. Нагреватели клейм всех типов и видов.',
             'preview_image'=>'images/ustanovkapd.jpeg',
+            'alt_main_image'=>'Устройство для нагрева клейм электрическое',
+            'title_main_image'=>'Нагреватель клейм электрический',
             'main_image'=>'images/nk500s.jpg',
             'content'=>'<h2>Что из себя представляет электрический нагреватель клейм</h2>
 
@@ -521,6 +539,8 @@ class CategorySeeder extends Seeder
             'meta_title'=>'Ветеринарные клейма и штампы заказать в Минске',
             'description'=>'Изготовление ветеринарных клейм и штампов для мяса и туш типа: ветнадзор, фигурные, буквенные, цифровые. Клейма для мяса всех типов и размеров под заказ.',
             'preview_image'=>'images/vetnadzor.jpg',
+            'alt_main_image'=>'Клеймо ветеринарное Ветнадзор',
+            'title_main_image'=>'Ветеринарные клейма и штампы',
             'main_image'=>'images/vet1.jpg',
             'content'=>'<p>&nbsp; &nbsp; &nbsp;Ветеринарное клеймо - изделие из латуни или бронзы, предназначенное для маркировки мяса. Маркировка подтверждает пригодность мясных продуктов к употреблению в пищу.</p>
 
