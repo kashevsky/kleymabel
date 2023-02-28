@@ -242,6 +242,9 @@ table {
     .footer_container{
         padding-top: 5vh;
     }
+    .haracteristics table{
+        width: 95vw;
+    }
 }
 
 @media (min-width: 430px) and (max-width: 1199.98px) { 
@@ -311,4 +314,5 @@ table {
     .footer_container{
         display: none;
     }
+    
 }
