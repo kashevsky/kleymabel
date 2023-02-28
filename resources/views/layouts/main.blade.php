@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/product.css" />
     <link rel="stylesheet" href="/styles/order.css" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
     <link rel='stylesheet' href='https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css'>
     <link rel='stylesheet' href='https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.css'><link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="/styles/fancybox.css" media="screen" />
