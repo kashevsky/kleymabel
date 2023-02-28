@@ -1,3 +1,9 @@
+input {
+    border-radius: 0;
+  }
+  input[type="search"] {
+    -webkit-appearance: none;
+  }
 .basket_container{
 min-height: 65vh;
 display: flex;
@@ -67,7 +73,7 @@ padding: 1px 3px;
     width: 90vw;
 }
 .basket-form input{
-    width: 50vw;
+    width: 60vw;
 }
 .basket-form  input[type=submit] {
 width: 30vw;
