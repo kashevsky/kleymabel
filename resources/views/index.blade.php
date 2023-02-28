@@ -1,6 +1,6 @@
 @extends('layouts.main')
-@section('title')
-@endsection
+<title>Клеймабел - kleymabel: изготовление клейм, клише и штампов</title>
+<meta name="description" content="Производство клейм, клише, штампов для выжигания по дереву и тиснения кожи, а также сургучных печатей.">
 @section('content')
 <div class="baner">
     <div class="baner_nav">

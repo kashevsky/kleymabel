@@ -77,10 +77,12 @@
                                 <li><a href="{{route('contacts')}}">Контакты</a></li>
                             </nav>
                             <hr>
+                            <a class="call" href="tel:+375 (29) 676-06-74">
                             <div class="mobile-menu__item">
                                 <img src="/images/menu-phone.svg">
                                 <p>8029-676-06-74</p>
                             </div>
+                            </a>
                             <div class="mobile-menu__item">
                                 <img src="/images/menu-email.svg">
                                 <p>kleymabel@mail.ru</p>
@@ -143,7 +145,9 @@
             </div>
         </div>
     </header>
- @yield('content')    
+    <div class="content_container">
+ @yield('content')
+    </div>
     <footer>
         <div class="footer_container">
             <div class="footer_row">

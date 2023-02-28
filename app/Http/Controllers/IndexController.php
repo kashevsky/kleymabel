@@ -56,7 +56,7 @@ class IndexController extends Controller
         foreach($allCategories as $category)
         {
             similar_text($category->title,$word, $per);
-            if(similar_text($category->title,$word, $per)>25)
+            if(similar_text($category->title,$word, $per)>10)
             {
                 $categories[] = $category;
             }

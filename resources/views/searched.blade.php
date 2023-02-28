@@ -2,6 +2,7 @@
 @section('content')
 <div class="catalog_section">
     <h1>Результаты поиска</h1>
+    @if(isset($categories))
     <div class="catalog">
         @foreach ($categories as $category )
         <div class="catalog__item">
@@ -18,5 +19,34 @@
         </div>
         @endforeach
     </div>
-</div>
+    @else
+    <br>
+    <h2 style="text-align: center">Нет результатов</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    @endif
+    
 @endsection

@@ -72,5 +72,16 @@ padding: 1px 3px;
 .basket-form  input[type=submit] {
 width: 30vw;
 }
+.basket_button a{
+    color: white;
+    font-size: 25px;
+    padding: 10px 50px;
+}
+.add_low{
+    padding: 5px 7px;
+}
+.basket_container{
+font-size: 17.5px;
+}
 
 }
