@@ -155,7 +155,7 @@
                 <div class="logo_column">
                     <img src="/images/logo-white.svg">
                     <div class="copyright">
-                        2023 - Клеймабел - изготовление клейм
+                        2018 - Клеймабел - изготовление клейм
                     </div>
                 </div>
                 <div class="socials_column">
@@ -165,7 +165,7 @@
                 <div class="contacts_column">
                     <p>Тел: 8029-676-06-74</p>
                     <p>Email: kleymabel@mail.ru</p>
-                    <p>Адрес: ул. Геологическая 117</p>
+                    <p>Адрес: ул. Геологическая 115</p>
                 </div>
             </div>
         </div>

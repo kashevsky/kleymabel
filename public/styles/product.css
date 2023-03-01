@@ -235,7 +235,12 @@ table {
     }
     .contacts_column p{
         padding: 1vh 0;
+        color: white;
     }
+    .contacts_column a{
+        color: white;
+    }
+    
     .contacts_column{
         padding-bottom: 4vh;
     }

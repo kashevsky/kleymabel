@@ -92,9 +92,10 @@ li{
 .mobile-menu{
     display: none;
     position: absolute;
-    top: 67px;
+    top: 65px;
     left: 0px;
-    width: 85vw;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     background-color: white;
     color: #343434;

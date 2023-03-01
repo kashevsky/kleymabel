@@ -56,7 +56,7 @@
     margin: 1vh 1vw 1vh 0;
 }
 .catalog__item img{
-min-height: 210px;
+    min-height: 220px;
 }
 .catalog__item h2{
     font-family: 'Montserrat';
@@ -238,6 +238,7 @@ min-height: 210px;
 .portfolio__item img{
     width: 20vw;
     height: 40vh;
+    object-fit: cover;
 }
 /* end about index page */
 @media only screen and (min-width : 320px) and (max-width : 479px) {

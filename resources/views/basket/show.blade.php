@@ -12,6 +12,7 @@
 </div>
 @else
 <h1>Корзина</h1>
+<br>
 <table>
     <tr>
       <td>Товар</td>
@@ -53,6 +54,7 @@
       <input type="mail" name="email" placeholder="Почта" class="basket_input">
     </div>
     <div>
+      <br>
       <label>Макет</label>
       <input type="file" name="image" class="basket_input-file">
       <div>
