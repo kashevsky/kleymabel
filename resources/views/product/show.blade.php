@@ -109,6 +109,7 @@
 </div>
 <div class="sub_products">
     @foreach ($subProducts as $subProduct )
+    <a href="{{route('product.showSubProduct',$subProduct->slug)}}">
     <div class="sub_products__item">
         <img src="{{$subProduct->preview_image}}">
         <h2>{{$subProduct->title}}</h2>
@@ -116,11 +117,12 @@
         <div class="price">
             {{$subProduct->price}} руб.
         </div>
-        <a class="sub_product_button" href="{{route('product.showSubProduct',$subProduct->slug)}}">
+        <p class="sub_product_button">
             Подробнее
-        </a>
+        </p>
         </div>
     </div>
+    <a>
     @endforeach
 </div>
 @endif

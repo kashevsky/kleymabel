@@ -33,6 +33,7 @@
     <h1>Изготовление клейм</h1>
     <div class="catalog">
         @foreach ($categories as $category )
+        <a href="{{route('category.show',$category->slug)}}">
         <div class="catalog__item">
             <img src="{{$category->preview_image}}">
             <h2>{{$category->title}}</h2>
@@ -41,10 +42,11 @@
                     {{$category->price}} руб.
                 </p>
                 <div class="button">
-                    <a href="{{route('category.show',$category->slug)}}">Подробнее</a>
+                    <p>Подробнее</p>
                 </div>
             </div>
         </div>
+        </a>
         @endforeach
     </div>
 </div>

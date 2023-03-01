@@ -40,7 +40,7 @@ class IndexController extends Controller
         {
             return abort(404);
         }
-        $products = $category->products()->whereNull('product_id')->get();
+        $products = $category->products()->whereNull('product_id')->orderBy('order')->get();
         $haracteristics = $category->haracteristics;
         $options = $category->options;
         $images = $category->images;

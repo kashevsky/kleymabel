@@ -50,13 +50,17 @@
     flex-direction: column;
     justify-content: space-around;
     width: 17vw;
-    min-width: 200px;
+    display: flex;
+    height: 330px;
+    /* min-width: 200px; */
     padding: 0 1vw 4vh 1vw;
     text-align: center;
     margin: 1vh 1vw 1vh 0;
 }
 .catalog__item img{
     min-height: 220px;
+    height: 300px;
+    object-fit: cover;
 }
 .catalog__item h2{
     font-family: 'Montserrat';
@@ -82,7 +86,7 @@
     display: flex;
     align-items: center;
 }
-.button a{
+.button p{
     color: white;
     padding: 8px 25px;
 }
@@ -281,6 +285,7 @@ padding: 5vh 0;
 }
 .catalog__item{
     width: 100vw;
+    height: 500px;
     margin-bottom: 4vh;
 }
 .catalog__item img{
