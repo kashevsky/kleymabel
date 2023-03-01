@@ -39,10 +39,11 @@
 }
 .catalog{
     font-family: 'Montserrat';
-    padding: 1vh 10vw;
+    padding: 1vh 5vw;
     padding-bottom: 10vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .catalog__item{
     background-color: white;

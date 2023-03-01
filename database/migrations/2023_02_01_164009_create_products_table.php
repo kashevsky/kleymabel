@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->tinyInteger('is_stamp')->default(1);
             $table->string('sub_products_ids')->nullable();
-            $table->integer('order')->nullable();
+            $table->integer('orders')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->index('category_id');
             $table->unsignedBigInteger('product_id')->nullable();
