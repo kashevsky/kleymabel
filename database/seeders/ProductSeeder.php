@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
             'main_image'=>'images/ippc.jpeg',
             'content'=>'',
             'price'=>92,
-            'order'=>1,
+            'orders'=>1,
             'slug'=>'kleymo_ippc',
             'category_id'=>1,
             'sub_products_ids'=>'3,4',
@@ -69,7 +69,7 @@ class ProductSeeder extends Seeder
             </ul>',
             'price'=>114,
             'slug'=>'kleymo_eur',
-            'order'=>2,
+            'orders'=>2,
             'category_id'=>1,
             'short_desc'=>'Овальное клеймо для поддонов типа EUR. Оснащается ручкой или электрическим нагревателем'
         ]);
@@ -101,7 +101,7 @@ class ProductSeeder extends Seeder
             <p>&nbsp; &nbsp; &nbsp;По заказу можем изготовить индивидуальное клеймо с 3х и 4х значным номером партии , индивидуальной формы или с логотипом компании</p>',
             'price'=>530,
             'slug'=>'fitosanitarnoe_data',
-            'order'=>3,
+            'orders'=>3,
             'category_id'=>1,
             'short_desc'=>'Клеймо IPPC для паллет  со сменными цифрами, обозначающими номер партии и дату.'
         ]);
@@ -115,7 +115,7 @@ class ProductSeeder extends Seeder
             'price'=>114,
             'slug'=>'kleymo_uic',
             'category_id'=>1,
-            'order'=>4,
+            'orders'=>4,
             'short_desc'=>'Клеймо типа UIC для нанесения отжигов на поддоны. Оснастка: ручка / нагреватель.',
             
         ]);

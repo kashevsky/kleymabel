@@ -138,11 +138,10 @@ table {
 }
 .sub_products__item{
     background: white;
-    margin-bottom: 10vh;
+    margin-bottom: 25px;
     margin-left: 2vw;
-    padding: 2vh 2vw 6vh 2vw;
+    padding: 2vh 2vw 40px 2vw;
     width: 20vw;
-    height: 50vh;
 }
 .sub_products__item img{
     width: 20vw;
