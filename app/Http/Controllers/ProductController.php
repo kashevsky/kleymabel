@@ -17,7 +17,7 @@ class ProductController extends Controller
         {
             return abort(404);
         }
-        $subProducts = $product->subProducts;
+        $subProducts = $product->subProducts()->orderBy('order')->get();
         $haracteristics = $product->haracteristics;
         $images = $product->images;
         return view('product.show',compact('product','subProducts','menuCategories','categories','haracteristics','images'));
