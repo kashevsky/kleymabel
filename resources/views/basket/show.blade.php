@@ -56,7 +56,7 @@
     <div>
       <br>
       <label>Макет</label>
-      <input type="file" name="image" class="basket_input-file">
+      <input type="file" name="image" class="basket_input-file" placeholder="Отправить ф">
       <div>
       <label style="color: red">Форматы: jpeg, jpg, png, pdf</label>
       </div>
@@ -66,4 +66,9 @@
   </div>
  @endif
 </div>
+<br>
+<br>
+
+<br>
+<br>
 @endsection
