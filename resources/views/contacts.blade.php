@@ -25,15 +25,12 @@
             </div>
             <div class="contacts_item">
                 <img src="/images/location.png">
-                <p>г. Минск ул. Геологическая 117</p>
+                <p>г. Минск ул. Геологическая 115</p>
             </div>
         </div>
         <div class="socials-block">
             <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
                 <img src="/images/instagram.png">
-            </a>
-            <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
-                <img src="/images/vk2.png">
             </a>
         </div>
     </div>

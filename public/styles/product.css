@@ -11,7 +11,7 @@
     margin: 0 1vw;
 }
 .bread_crumbs__item a{
-    color: #363636;
+    color: #001c00;
 }
 .product_container{
     font-family: 'Montserrat';
@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 7vh;
-    color: #363636;
+    color: #001c00;
 }
 .product_nav{
     min-width: 5vw;
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     line-height: 45px;
-    color: #363636;
+    color: #001c00;
 }
 .product_nav a:hover{
     color: #FE201D;
@@ -43,7 +43,7 @@
 .product{
     display: flex;
     flex-wrap: wrap;
-    color: #363636;
+    color: #001c00;
 }
 .slider img{
     width: 25vw;
@@ -61,10 +61,10 @@
 .product_about{
     width: 35vw;
     padding: 0 0 4vh 0;
-    color: #363636;
+    color: #001c00;
 }
 .product_price{
-    color: #363636;
+    color: #001c00;
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 3vh;
@@ -86,6 +86,7 @@
     margin-bottom: 7vh;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
 }
 .haracteristics p{
     padding-bottom: 20px;
@@ -93,11 +94,13 @@
 }
 table {
     border-collapse: collapse;
+    color: #001c00;
 }
   table td, table th {
     border: 1px solid #D6D6D6;
     box-sizing: border-box;
     padding: 6px 40px 2px 10px ;
+    color: #001c00;
 }
 .product_dignities{
     padding: 5vh 0 8vh 0;
@@ -109,6 +112,7 @@ table {
 }
 .product_dignities p{
     padding-left: 0.5vw;
+    color: #001c00;
 }
 .product_page_h2 h2{
     text-align: center;
@@ -116,7 +120,7 @@ table {
     background: #F7F7F7;
     font-family: 'Montserrat';
     font-size: 30px;
-    color: #363636;
+    color: #001c00;
    }
 .sub_products{
     display: flex;
@@ -126,11 +130,11 @@ table {
     background: #F7F7F7;
     padding: 0 5vw;
     font-family: 'Montserrat';
-    color: #363636;
+    color: #001c00;
 }
 .sub_products a{
     text-decoration: none;
-    color: #363636;
+    color: #001c00;
 }
 .sub_products a:hover{
     text-decoration: none;
@@ -159,11 +163,14 @@ table {
     padding-top: 5vh;
 }
 .sub_product_button{
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 6px;
     text-align: center;
     width: 10vw;
     color: white;
     text-align: center;
-    background-color: #FE201D;
     padding: 5px 10px;
 }
 .sub_product_button:hover{

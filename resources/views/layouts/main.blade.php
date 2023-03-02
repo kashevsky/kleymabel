@@ -122,9 +122,9 @@
                 </div>
                 <div class="header_icons">
                     <div class="header_socials">
-                        <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
+                        {{-- <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348">
                             <img src="/images/vk.svg">
-                        </a>
+                        </a> --}}
                         <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737">
                             <img src="/images/inst.svg">
                         </a>
@@ -159,13 +159,13 @@
                     </div>
                 </div>
                 <div class="socials_column">
-                    <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348"><img src="/images/vk-white.svg"></a>
+                    {{-- <a href="https://vk.com/kleymabel?ysclid=lecp6sagsb371636348"><img src="/images/vk-white.svg"></a> --}}
                     <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737"><img src="/images/inst-white.svg"></a>
                 </div>
                 <div class="contacts_column">
-                    <p>Тел: 8029-676-06-74</p>
-                    <p>Email: kleymabel@mail.ru</p>
-                    <p>Адрес: ул. Геологическая 115</p>
+                    <p>Тел:&nbsp<span style="color: #fe1f1c;"> 8029-676-06-74</span></p>
+                    <p>Email:&nbsp<span style="color: #fe1f1c;"> kleymabel@mail.ru</span></p>
+                    <p>Адрес:&nbsp <span style="color: #fe1f1c;"> ул. Геологическая 115</span></p>
                 </div>
             </div>
         </div>

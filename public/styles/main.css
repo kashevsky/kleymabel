@@ -98,10 +98,10 @@ li{
     height: 100vh;
     z-index: 1;
     background-color: white;
-    color: #343434;
+    color: #001c00;
 }
 .mobile-menu a{
-    color: #343434;
+    color: #001c00;
 }
 .mobile-menu nav{
     padding: 20px 0;
@@ -136,7 +136,7 @@ li{
 }
 .header_nav nav a{
     margin-right: 1vw;
-    color: #363636;
+    color: #001c00;
 }
 .header_nav nav a:hover{
     text-decoration: none;
@@ -225,7 +225,7 @@ margin-bottom: 10px;
 }
 .catalog a{
     text-decoration: none;
-    color: #343434;
+    color: #001c00;
 }
 .catalog a:hover{
     text-decoration: none;

@@ -88,7 +88,7 @@
                 <div class="product_dignities__item">
                     <li>
                         <img src="/images/location-mini.svg">
-                        <p>г. Минск ул. Геологическая 117</p>
+                        <p>г. Минск ул. Геологическая 115</p>
                     </li>
                 </div>
             </div>

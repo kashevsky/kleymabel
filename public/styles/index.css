@@ -35,7 +35,7 @@
     font-weight: 500;
     font-size: 30px;
     padding: 3vh 0 2vh 0;
-    color: #363636;
+    color: #001c00;
 }
 .catalog{
     font-family: 'Montserrat';
@@ -70,6 +70,7 @@
     font-size: 20px;
     line-height: 150%;
     padding-bottom: 6%;
+    color: #001c00;
 }
 .item_flex{
     display: flex;
@@ -81,9 +82,13 @@
     font-weight: 600;
     font-size: 18px;
     padding-right: 20px;
+    color: #001c00;
 }
 .button{
-    background: #FE201D;
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 6px;
     display: flex;
     align-items: center;
 }
@@ -106,17 +111,19 @@
     margin: 1px auto;
     padding: 5vh 10vw 10vh 10vw;
     font-family: 'Montserrat';
+    color: #001c00;
 }
 .about_title
 {
     text-align: center;
     font-size: 40px;
     line-height: 64px;
-    color: #363636;
+    color: #001c00;
 }
 .about_section__text{
     padding: 5vh 0 10vh 0;
     text-align: center;
+    color: #001c00;
 }
 .advantages{
     display: flex;
@@ -127,11 +134,12 @@
     text-align: center;
     margin-top: 2vh;
     font-weight: bold;
+    color: #001c00;
 }
 .options{
     background-color: #F7F7F7;
     font-family: 'Montserrat', sans-serif;
-    color: #363636;
+    color: #001c00;
     padding-bottom: 5vw;
 }
 .options h2{
@@ -162,16 +170,19 @@
 .options_text{
     padding: 0 2vw;
     width: 16vw;
+    color: #001c00;
 }
 .options_text h3{
     margin-bottom: 2vh;
     font-size: 16px;
+    color: #001c00;
 }
 .main_text{
     padding: 10vh 15vw;
     font-family: 'Montserrat';
     font-size: 16px;
-    line-height: 170.5%
+    line-height: 170.5%;
+    color: #001c00;
 }
 .main_text li{
     list-style: disc;
@@ -186,6 +197,7 @@
 .video_container h2
 {
     text-align: center;
+    color: #001c00;
 }
 .video{
     margin: 1px auto;
@@ -199,7 +211,7 @@
     font-family: 'Montserrat';
     text-align: center;
     font-size: 30px;
-    color: #363636;
+    color: #001c00;
     padding: 12vh 0;
 }
 .how_to_order-flex {
@@ -226,7 +238,7 @@
     font-family: 'Montserrat';
     text-align: center;
     font-size: 40px;
-    color: #363636;
+    color: #001c00;
     font-weight: normal;
     padding: 5vh 0;
 }
@@ -241,8 +253,8 @@
     margin: 0 1vw 2vh 0;
 }
 .portfolio__item img{
-    width: 20vw;
-    height: 40vh;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
 }
 /* end about index page */
