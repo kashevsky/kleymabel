@@ -163,7 +163,7 @@
                     <a href="https://www.instagram.com/kleymabel.by/?ysclid=lecp571qyd956389737"><img src="/images/inst-white.svg"></a>
                 </div>
                 <div class="contacts_column">
-                    <p>Тел:&nbsp<span style="color: #fe1f1c;"> 8029-676-06-74</span></p>
+                    <p>Тел:&nbsp<span style="color: #fe1f1c;"><a class="call" href="tel:+375 (29) 676-06-74" style="color: #fe1f1c;"> 8029-676-06-74</a></span></p>
                     <p>Email:&nbsp<span style="color: #fe1f1c;"> kleymabel@mail.ru</span></p>
                     <p>Адрес:&nbsp <span style="color: #fe1f1c;"> ул. Геологическая 115</span></p>
                 </div>
