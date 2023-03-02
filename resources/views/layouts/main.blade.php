@@ -50,7 +50,7 @@
                     @csrf
                     <div class="input_flex">
                     <input class="input_search" name="word">
-                    <label for="input_saerch">&nbsp;</label>
+                    <label for="input_saerch"></label>
                     <input type="submit" value="Поиск" class="search_button">
                     </div>
                     </form>
