@@ -177,7 +177,7 @@ class Products extends Section implements Initializable
                 ]),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Группировка'),
-                AdminFormElement::number('order','Порядок'),
+                AdminFormElement::number('orders','Порядок'),
                 AdminFormElement::html('<hr>'),
                 AdminFormElement::html('Расположение в каталоге'),
                 AdminFormElement::select('category_id', 'Выбор категории')->setModelForOptions(\App\Models\Category::class),
