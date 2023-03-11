@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('width')->nullable();
             $table->string('accessories')->nullable();
             $table->string('form')->nullable();
+            $table->string('orders')->nullable();
             $table->string('garanty')->nullable();
             $table->string('slug')->nullable();
             $table->string('video')->nullable();

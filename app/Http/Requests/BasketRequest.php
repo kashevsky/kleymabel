@@ -25,7 +25,7 @@ class BasketRequest extends FormRequest
     {
         return [
             'name'=>'',
-            'phone'=>'required|numeric|digits_between:7,13',
+            'phone'=>'required',
             'email'=>'',
             'image'=>'',
         ];
@@ -34,7 +34,6 @@ class BasketRequest extends FormRequest
     {
         return [
             'required'=>'Поле обязательно для ввода',
-            'digits_between'=>'Поле должно содержать от 7 до 13 символов',
             'numeric' => 'Только числа'
         ]; 
     }

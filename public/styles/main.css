@@ -86,6 +86,26 @@ li{
 .header_line{
     padding: 0 2vw;
 }
+.basket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.basket p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #FE201D;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: relative;
+    left: 3.5px;
+}
 .burger-menu{
     display: none;
 }

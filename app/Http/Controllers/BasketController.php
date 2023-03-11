@@ -9,6 +9,7 @@ use App\Models\Category;
 use App\Models\SubProduct;
 use Illuminate\Http\Request;
 use App\Models\BasketProduct;
+use App\Services\GetProductCount;
 use Illuminate\Support\Facades\Log;
 use App\Http\Requests\BasketRequest;
 use Illuminate\Support\Facades\Mail;
@@ -18,7 +19,8 @@ class BasketController extends Controller
     public function show()
     {
         $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
-        return view('basket.show',compact('basket'));
+        $countProducts = GetProductCount::getCount();
+        return view('basket.show',compact('basket','countProducts'));
     }
     public function addProduct(Product $product)
     {
@@ -74,16 +76,12 @@ class BasketController extends Controller
     {       
             $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
             $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
-            $basket->update($request->only('name','email','phone'));
+            $basket->update($request->only('name','phone'));
             $basket->is_confirmed = 1;
             $basket->save();
             if(isset($request->name))
             {
                 $data['name'] = $request['name'];
-            }
-            if(isset($request->email))
-            {
-                $data['email'] = $request['email'];
             }
             $data['phone'] = $request['phone'];
             if(isset($request->image))
@@ -99,7 +97,7 @@ class BasketController extends Controller
             }
             $data['order'] = $order;
             Mail::to('kleymabel@mail.ru')->send(new SendMail($data));
-            return redirect()->route('index');
+            return redirect()->route('basket.showIsConfirmed');
     }
     public function addCategory(Category $product)
     {
@@ -123,5 +121,9 @@ class BasketController extends Controller
             BasketProduct::create(['title'=> $product->title, 'basket_id'=> $basket->id]);
             return redirect()->back();
         }
+    }
+    public function showIsConfirmed()
+    {
+        return view('basket.confirm');
     }
 }

@@ -2,34 +2,40 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Basket;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\MainPortfolio;
 use App\Models\CategoryOptions;
 use App\Models\CategoryPortfolio;
+use App\Services\GetProductCount;
 use App\Models\CategoryHaracteristics;
 
 class IndexController extends Controller
 {
     public function index()
     {
-        $categories = Category::get();
+        $categories = Category::orderBy('orders')->get();
         $menuCategories = $categories->where('show_in_menu',1);
         $portfolio = MainPortfolio::get();
-        return view('index', compact('categories','menuCategories','portfolio'));
+        $countProducts = GetProductCount::getCount();
+        return view('index', compact('categories','menuCategories','portfolio','countProducts'));
     }
     public function contacts()
     {
-        return view('contacts');
+        $countProducts = GetProductCount::getCount();
+        return view('contacts','countProducts');
     }
     public function payment()
     {
-        return view('payment');
+        $countProducts = GetProductCount::getCount();
+        return view('payment','countProducts');
     }
     public function delivery()
     {
-        return view('delivery');
+        $countProducts = GetProductCount::getCount();
+        return view('delivery','countProducts');
     }
     public function show($slug)
     {
@@ -45,7 +51,8 @@ class IndexController extends Controller
         $options = $category->options;
         $images = $category->images;
         $portfolio = $category->portfolio;
-        return view('category.show', compact('category','menuCategories','products','haracteristics','options','images','portfolio'));
+        $countProducts = GetProductCount::getCount();
+        return view('category.show', compact('category','menuCategories','products','haracteristics','options','images','portfolio','countProducts'));
     }
     public function search(Request $request)
     {
@@ -61,6 +68,7 @@ class IndexController extends Controller
                 $categories[] = $category;
             }
         }
-        return view('searched', compact('categories'));
+        $countProducts = GetProductCount::getCount();
+        return view('searched', compact('categories','countProducts'));
     }
 }

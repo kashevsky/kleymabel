@@ -34,6 +34,8 @@ Route::post('/basket/add-category/{product}','\App\Http\Controllers\BasketContro
 Route::post('/basket/add-product-count/{product}','\App\Http\Controllers\BasketController@addCount')->name('basket.add-product-count');
 Route::post('/basket/low-product-count/{product}','\App\Http\Controllers\BasketController@lowCount')->name('basket.low-product-count');
 Route::post('/basket/confirm','\App\Http\Controllers\BasketController@confirm')->name('basket.confirm');
+Route::get('/basket/confirm/thank_you','\App\Http\Controllers\BasketController@showIsConfirmed')->name('basket.showIsConfirmed');
+
 Auth::routes([
     'reset'=> false,
     'confirm'=> false,

@@ -141,6 +141,12 @@
                         <a href="{{route('basket.show')}}">
                             <img src="/images/basket.svg">
                         </a>
+                        @isset($countProducts)
+                            @if($countProducts != 0 )
+                            <p>{{$countProducts}}</p>
+                        @endif
+                        @endisset
+
                     </div>
                 </div>
             </div>
