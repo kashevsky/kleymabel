@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 <div class="basket_container">
-  <img src="/images/green.png" style="width: 200px">
+  <img src="/images/green.png" style="width: 80px">
   <br>
   <h1 style="color: green">Спасибо за предзаказ!</h1>
   <br>
