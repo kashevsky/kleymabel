@@ -73,7 +73,7 @@ class BasketController extends Controller
         return redirect()->route('basket.show');
     }
     public function confirm(BasketRequest $request)
-    {       
+    {
             $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
             $basketProducts = BasketProduct::where('basket_id',$basket->id)->get();
             $basket->update($request->only('name','phone'));
@@ -96,9 +96,18 @@ class BasketController extends Controller
                 $order .= $basketProduct->title . ',';
             }
             $data['order'] = $order;
-            Mail::to('kleymabel@mail.ru')->send(new SendMail($data));
+            Mail::to('kashevsky.d@yandex.ru')->send(new SendMail($data));
             return redirect()->route('basket.showIsConfirmed');
     }
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Add category to basket
+ *
+ * @param Category $product
+ *
+ * @return \Illuminate\Http\RedirectResponse
+ */
+/*******  55ccbfb6-6c4e-4506-99d0-283d253a4668  *******/
     public function addCategory(Category $product)
     {
         $basket = Basket::where('session_id', session()->getId())->where('is_confirmed',0)->first();
